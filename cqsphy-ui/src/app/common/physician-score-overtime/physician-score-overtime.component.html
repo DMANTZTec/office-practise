@@ -1,0 +1,49 @@
+<ng-container *ngIf="phyCQSScoreData">
+
+  <div class="table-responsive">
+    <table class="table summary-score-table">
+
+      <thead>
+        <tr *ngFor='let monthLabels of monthLabelsData'>
+          <th></th>
+          <th>{{monthLabels.month1Label}}</th>
+          <th>{{monthLabels.month2Label}}</th>
+          <th>{{monthLabels.month3Label}}</th>
+          <th>{{monthLabels.month4Label}}</th>
+          <th>{{monthLabels.month5Label}}</th>
+          <th>{{monthLabels.month6Label}}</th>
+          <th>{{monthLabels.month7Label}}</th>
+          <th>{{monthLabels.month8Label}}</th>
+          <th>{{monthLabels.month9Label}}</th>
+          <th>{{monthLabels.month10Label}}</th>
+          <th>{{monthLabels.month11Label}}</th>
+          <th>{{monthLabels.month12Label}}</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr *ngFor='let phyCQSScoreRow of phyCQSScoreData'>
+          <td>{{phyCQSScoreRow.metricLabelText}}
+            <br>
+            <span>{{phyCQSScoreRow.weightsDescription}}</span>
+          </td>
+          <td>{{phyCQSScoreRow.month1}}%</td>
+          <td>{{phyCQSScoreRow.month2}}%</td>
+          <td>{{phyCQSScoreRow.month3}}%</td>
+          <td>{{phyCQSScoreRow.month4}}%</td>
+          <td>{{phyCQSScoreRow.month5}}%</td>
+          <td>{{phyCQSScoreRow.month6}}%</td>
+          <td>{{phyCQSScoreRow.month7}}%</td>
+          <td>{{phyCQSScoreRow.month8}}%</td>
+          <td>{{phyCQSScoreRow.month9}}%</td>
+          <td>{{phyCQSScoreRow.month10}}%</td>
+          <td>{{phyCQSScoreRow.month11}}%</td>
+          <td>{{phyCQSScoreRow.month12}}%</td>
+        </tr>
+
+      </tbody>
+    </table>
+
+  </div>
+  <!-- .table-responsive -->
+</ng-container>

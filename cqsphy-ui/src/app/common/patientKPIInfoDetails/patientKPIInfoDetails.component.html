@@ -1,0 +1,28 @@
+<div class="col-xs-9">
+    <ng-container *ngIf='childKPIList.length === 0'>
+        <div class="kpi-chart-wrapper">
+            <ng-container *ngFor="let parentKPI of parentKPIList">
+                <h5>Lab or metric over time</h5>
+                <app-chartValues [patientMetricList]='patientMetricList' [subMetricId]='parentKPI.subMetricId'>
+                </app-chartValues>
+            </ng-container>
+        </div>
+    </ng-container>
+    <ng-container *ngIf='childKPIList.length > 0'>
+        <div class="kpi-chart-wrapper composite">
+            <ng-container *ngFor="let parentKPI of parentKPIList">
+                <app-chartValues [patientMetricList]='patientMetricList' [subMetricId]='parentKPI.subMetricId'>
+                </app-chartValues>
+            </ng-container>
+            <div class="composite-wrapper">
+                <ng-container *ngFor="let childKPI of childKPIList">
+                    <h5 class="centered-chart-title">Composite Breakdown</h5>
+                    <h5>Composite metric over time</h5>
+                    <app-chartValues [patientMetricList]='patientMetricList' [subMetricId]='childKPI.subMetricId'>
+                    </app-chartValues>
+                    <div class="composite-metric-spacer"></div>
+                </ng-container>
+            </div>
+        </div>
+    </ng-container>
+</div>

@@ -1,0 +1,12 @@
+<div class="tabs-wrapper">
+    <ul class="nav nav-tabs" role="tablist">
+        <li role="navigation" *ngFor="let routeLink of routeLinks; let i = index;" attr.aria-controls="{{routeLink.label}}" [ngClass]="{'active': rla.isActive}"
+            title="{{rla.isActive}}">
+            <a [routerLink]="routeLink.link" role="tab" routerLinkActive="active" #rla="routerLinkActive" [attr.active]="rla.isActive">{{routeLink.label}}</a>
+        </li>
+    </ul>
+    <div class="tab-blue-bar"></div>
+    <div class="tab-content">
+        <router-outlet></router-outlet>
+    </div>
+</div>

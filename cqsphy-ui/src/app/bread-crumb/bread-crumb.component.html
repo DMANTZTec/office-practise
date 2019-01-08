@@ -1,0 +1,7 @@
+<div class="breadcrumbs">
+  <ng-container *ngFor="let entity of currentEntityHierarchy; index as i; first as isFirst; last as isLast;">
+    <span *ngIf="!isFirst">&nbsp;&gt;&nbsp;</span>
+    <a *ngIf="!isLast" href="" (click)="onBreadCrumbClick(entity)">{{entity.fullName}}</a>
+    <a *ngIf="isLast">{{entity.fullName}} </a>
+  </ng-container>
+</div>

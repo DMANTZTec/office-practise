@@ -1,0 +1,761 @@
+@charset "UTF-8";
+
+/* ---------------------------------------------------------------
+ 
+
+/////// !READ-ONLY! - UI BASE STYLESHEET Ver. 1.0 - (Alpha) //////
+
+
+--------------------------------------------------------------- */
+
+
+/* ---------------------------------------------
+ RESETS / OVERRIDES
+--------------------------------------------- */
+
+/* -- TABLE RESET -- */
+
+
+table, 
+table caption, 
+table tbody, 
+table tfoot, 
+table thead, 
+table tr, 
+table th, 
+table td {
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    width: auto;
+    height: auto;
+}
+
+/* -- BOOTSTRAP TOOLTIPS - BRAND BLUE -- */
+
+.tooltip-inner {
+    background-color: #005595;
+    color: #fff;
+}
+
+.tooltip.top .tooltip-arrow {
+    border-top-color: #005595;
+}
+
+.tooltip.right .tooltip-arrow {
+    border-right-color: #005595;
+}
+
+.tooltip.bottom .tooltip-arrow {
+    border-bottom-color: #005595;
+}
+
+.tooltip.left .tooltip-arrow {
+    border-left-color: #005595;
+}
+
+.nav-tabs a, .sidebar-nav a, a:hover, a.btn {
+    text-decoration: none;
+}
+
+.disabled {
+    cursor: not-allowed;
+    color: #c7c7c7 !important;
+}
+
+
+/* ---------------------------------------------
+
+ TYPOGRAPHY - 2 Categories: 
+
+ 1) Display Type: (.type-display-H1,H2,H3,H4,H5,H6; .type-display-data-1,data-2, etc.) 
+
+ 2) Label Type: (.type-label-L1,L2,L3,L4 etc.)
+
+--------------------------------------------- */
+
+/* -- BODY COPY -- */
+
+.type-bodycopy {
+    font-size: 1.44em;
+    line-height: 1.5;
+    margin-bottom: 1em;
+    color: #434b58;
+}
+
+/* -- DISPLAY TYPE -- */
+
+p[class^="type-display-H"] {
+    margin-top: 0;
+    margin-bottom: .25em;
+    line-height: 1.15;
+    font-weight: 300;
+    color: #646464;
+}
+
+.type-display-H1 {
+    font-size: 3.225em;
+}
+
+.type-display-H2 {
+    font-size: 2.986em;
+}
+
+.type-display-H3 {
+    font-size: 2.488em;
+}
+
+.type-display-H4 {
+    font-size: 2.074em;
+}
+
+
+/* -- DATA POINTS -- */
+
+p[class^="type-display-data-"] {
+    margin-bottom: 0;
+    margin-top: 0;
+    line-height: 1.2;
+    font-weight: 300;
+    color: #646464;
+}
+
+.type-display-data-1 {
+    font-size: 7em;
+}
+
+.type-display-data-2 {
+    font-size: 5.5em;
+}
+
+.type-display-data-3 {
+    font-size: 4.3em;
+}
+
+.type-display-data-4 {
+    font-size: 2.488em;
+}
+
+p.type-display-data-5 {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+
+/* -- LABEL TYPE -- */
+
+p[class^="type-label-"] {
+    letter-spacing: .025em;
+    margin-top: .25em;
+    margin-bottom: 0;
+    color: #646464;
+}
+
+.type-label-L1 {
+    font-size: 1.728em;
+}
+
+.type-label-L2 {
+    font-size: 1.44em;
+}
+
+.type-label-L3 {
+    font-size: 1.2em;
+    letter-spacing: .02em;
+}
+
+.type-label-L4 {
+    font-size: 1.08em;
+    letter-spacing: .04em;
+}
+
+.type-label-L5 {
+    font-size: 0.9em;
+    letter-spacing: .05em;
+}
+
+
+/* ---------------------------------------------
+ PANELS
+--------------------------------------------- */
+
+.panel {
+    border-radius: 7px;
+    box-shadow: .03em .06em .5em rgba(0, 0, 0, 0.25);
+}
+.panel-heading {
+    font-size: 1.6em;   
+    font-weight: 600;
+    letter-spacing: .02em;
+    margin: .3em;
+}
+.panel-heading p {
+    display: block;
+}
+.panel-heading-module {
+    padding: .7em .3em .6em 1em;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.panel-body {
+    padding: 0 2em .75em 2em;
+}
+
+
+/* -- ICONS IN PANEL HEADING -- */
+
+.panel-heading .icon {
+    font-size: 1.4em;
+    color: #fff;
+    float: right !important;
+    margin-right: .15em;
+}
+
+.panel-heading .icon:hover {
+    color: rgba(255,255,255,.5);
+}
+
+/* ------- ICONS IN PANEL BODY ------- */
+
+.panel-icon-wrapper {
+    text-align: right;
+    background-color: #fff;
+    margin-top: -1em;
+}
+
+.panel-icon-wrapper .icon {
+    margin: 0 -.2em 0 .3em;
+}
+
+.panel-icon-wrapper p {
+    display: inline-block;
+}
+
+/* ------- MONITORING PANELS ------- */
+
+.panel-green .panel-heading {
+    background-color: #80B247;
+}
+
+.panel-yellow .panel-heading {
+    background-color: #FBAA19;
+}
+
+.panel-red .panel-heading {
+    background-color: #CE455F;
+}
+
+.panel-neutral .panel-heading {
+    background-color: #8A9399;
+}
+
+/* ------- PANEL CONTAINERS ------- */
+
+.panel-container {
+    padding: 1em 2em 1em 2em;
+    border: 1px solid #eaeaea;
+}
+
+.panel-container .panel-body {
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+}
+
+/* ------- FOR POSITIONING CHILDREN ------- */
+
+.panel-relative {
+    position: relative;
+}
+
+
+
+/* ---------------------------------------------
+ MODULES
+--------------------------------------------- */
+
+
+/* ----------- PANEL HEADING MODULE 
+
+----------- */
+
+.panel-heading-module {
+    padding: .6em .3em .5em .9em;
+}
+
+.panel-heading-module-green {
+    background-color: #80B247;
+}
+
+.panel-heading-module-yellow {
+    background-color: #FBAA19;
+}
+
+.panel-heading-module-red {
+    background-color: #CE455F;
+}
+
+.panel-heading-module p {
+    color: #fff;
+}
+
+.panel-heading-module i {
+    color: #fff;
+    font-size: 1.5em;
+    margin: .1em .3em 0 0;
+}
+
+.panel {
+    border-radius: 7px;
+    box-shadow: .03em .06em .5em rgba(0, 0, 0, 0.25);
+}
+.panel-heading {
+    font-size: 1.6em;   
+    font-weight: 600;
+    letter-spacing: .02em;
+    margin: .3em;
+}
+.panel-heading p {
+    display: block;
+}
+.panel-heading-module {
+    padding: .7em .3em .6em 1em;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.panel-body {
+    padding: 0 2em .75em 2em;
+}
+
+
+/* ----------- MINI PANEL INDICATORS ----------- */
+
+.mini-panel-indicator {
+    display: inline-block;
+    width: 4.8em;
+    border: 2px solid #eaeaea;
+    border-radius: 1em;
+}
+
+.mini-panel-indicator .panel-heading {
+    border-top-right-radius: .4em;
+    border-top-left-radius: .4em;
+    padding: .4em;
+    margin: .21em;
+}
+
+.mini-panel-indicator .panel-body {
+    padding: 0;
+}
+
+.mini-panel-indicator .panel-body p {
+    font-weight: 700;
+    text-align: center;
+    margin-top: -.25em;
+    padding: 0;
+}
+
+
+
+/* ---------------------------------------------
+ TABS 
+--------------------------------------------- */
+
+/* ------- TABBED PANEL ------- */
+
+.nested-nav-tabs .panel-heading {
+    padding: .7em .7em 0 .7em;
+}
+
+.nested-nav-tabs.panel .nav-tabs > li > a {
+    margin-bottom: 1px;
+    color: #fff;
+}
+
+.nested-nav-tabs.panel .nav-tabs > li > a:hover {
+    background-color: #fff;
+    border-color: transparent;
+    color: #407C96;
+}
+
+.nested-nav-tabs.panel .nav-tabs > li.active > a {
+	color: #407C96;
+	background-color: #fff;
+	border-color: transparent;
+}
+
+.panel.nested-nav-tabs .nav-tabs {
+	border-bottom: none;
+}
+
+
+/* ------- RESPONSIVE TABS ------- */
+
+.responsive-nav-tabs {
+    min-height: 3em;
+}
+
+.panel-heading.horizontal-tabs {
+    height: 3.72em;
+}
+
+.horizontal-scrollable-tabs .horizontal-tabs .responsive-nav-tabs {
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+}
+
+/* mobile focus / scrollbar removed */
+.horizontal-scrollable-tabs .horizontal-tabs .responsive-nav-tabs::-webkit-scrollbar {
+    width: 0 !important;
+}
+
+/* wrapping tabs container to avoid firefox scrollbar */
+.scroll-wrapper {
+    overflow: hidden;
+}
+
+.horizontal-scrollable-tabs .horizontal-tabs .responsive-nav-tabs > li {
+    float: none;
+    text-align: center;
+}
+
+.horizontal-scrollable-tabs {
+    margin: 2em 0 0 0;
+}
+
+.horizontal-tabs {
+    position: relative;
+}
+
+.fade-out-tabs {
+    background: linear-gradient(to right, rgba(168,189,205,0), rgba(168,189,205,1));
+    height: 3em;
+    width: 7em;
+    z-index: 5;
+    position: absolute;
+    top 0;
+    right: 0;
+}
+
+
+
+
+/* ---------------------------------------------
+ TABLES
+--------------------------------------------- */
+
+/* firefox has some awkward fieldset styling involving width that interferes with the responsive table */
+@-moz-document url-prefix() {
+    fieldset {
+        display: table-cell;
+    }
+}
+
+
+
+.table-scroll-y {  
+    overflow: auto;
+}
+
+/* ---------------------------------------------
+ ALERTS
+--------------------------------------------- */
+
+.alert {
+    font-size: 1.4em !important;
+    font-weight: 400;
+    letter-spacing: .03em;
+    text-align: center;
+    color: #fff;
+    border: none;
+}
+
+.alert > i {
+    margin: -.15em 0 0 .2em;
+    color: rgba(255,255,255,.7);
+}
+
+.alert-green {
+    background-color: #80B247;
+}
+
+.alert-yellow {
+    background-color: #FBAA19;
+}
+
+.alert-red {
+    background-color: #CE455F;
+}
+
+.alert-neutral {
+    background-color: #8A9399;
+}
+
+
+
+/* ---------------------------------------------
+ LEGENDS
+--------------------------------------------- */
+
+.legend-inline, .legend-block {
+    padding-bottom: 1em;
+}
+
+.legend-inline {
+    display: inline-block;
+}
+
+.legend-inline p > i, .legend-block p > i {
+    font-size: 1.1em;
+    margin-right: .3em;
+}
+
+.legend-inline p {
+    display: inline-block;
+    font-size: 1.25em;
+    font-weight: 600;
+    letter-spacing: .03em;
+    margin: 0 1.25em 0 .3em;
+    color: #646464;
+}
+
+.legend-block p {
+    display: block;
+    font-size: 1.25em;
+    font-weight: 600;
+    letter-spacing: .03em;
+    margin: 0 1.25em .25em .3em;
+    color: #646464;
+}
+
+
+
+/* ---------------------------------------------
+ COLOR APPLICATION
+--------------------------------------------- */
+
+/* ------- FMC / FKC ------ */
+
+.brand-blue {
+    color: #005595 !important;
+}
+
+.fmc-hd {
+    color: #0084A1;
+}
+
+.fkc-turquoise {
+    color: #26BEC9;
+}
+
+/* ------- COLOR BLIND SAFE GREEN / RED PALETTE  ------ */
+
+.green {
+    color: #80B247 !important; 
+}
+
+.yellow {
+    color: #FBAA19 !important; 
+}
+
+.red {
+    color: #CE455F !important; 
+}
+
+.neutral {
+    color: #8A9399 !important; 
+}
+
+.bg-green {
+    background-color: #80B247 !important; 
+}
+
+.bg-yellow {
+    background-color: #FBAA19 !important; 
+}
+
+.bg-red {
+    background-color: #CE455F !important; 
+}
+
+.bg-neutral {
+    background-color: #8A9399 !important; 
+}
+
+/* ------- DATA DISPLAY PALETTE ------ */
+
+.data-color-1 {
+    color: #80A4AF !important;
+}
+
+.data-color-2 {
+    color: #0077A8 !important;
+}
+
+.data-color-3 {
+    color: #2F5475 !important;
+}
+
+.data-color-4 {
+    color: #00A4ED !important;
+}
+
+.data-color-5 {
+    color: #407C96 !important;
+}
+
+.data-color-6 {
+    color: #4EA8C4 !important;
+}
+
+.data-color-7 {
+    color: #002D5A !important;
+}
+
+.data-color-8 {
+    color: #0056AF !important;
+}
+
+/* ------- BACKGROUND COLOR - DATA DISPLAY PALETTE ------ */
+
+.bg-data-color-1 {
+    background-color: #80A4AF;
+}
+
+.bg-data-color-2 {
+    background-color: #0077A8;
+}
+
+.bg-data-color-3 {
+    background-color: #2F5475;
+}
+
+.bg-data-color-4 {
+    background-color: #00A4ED;
+}
+
+.bg-data-color-5 {
+    background-color: #407C96;
+}
+
+.bg-data-color-6 {
+    background-color: #4EA8C4;
+}
+
+.bg-data-color-7 {
+    background-color: #002D5A;
+}
+
+.bg-data-color-8 {
+    background-color: #0056AF;
+}
+
+/* ------- TABLE - COLORED BORDER LEFT ------ */
+
+[class^="table-border-data-color-"] {
+    border-left: 6px solid;
+}
+
+.table-border-data-color-1 {
+    border-left-color: #80A4AF;
+}
+
+.table-border-data-color-2 {
+    border-left-color: #0077A8;
+}
+
+.table-border-data-color-3 {
+    border-left-color: #2F5475;
+}
+
+.table-border-data-color-4 {
+    border-left-color: #00A4ED;
+}
+
+.table-border-data-color-5 {
+    border-left-color: #407C96;
+}
+
+.table-border-data-color-6 {
+    border-left-color: #4EA8C4;
+}
+
+.table-border-data-color-7 {
+    border-left-color: #002D5A;
+}
+
+.table-border-data-color-8 {
+    border-left-color: #0056AF;
+}
+
+/* ------- FULL TD COLOR ------ */
+
+td.green-cell {
+    background-color: #80B247;
+    color: #fff !important;
+}
+
+td.yellow-cell {
+    background-color: #FBAA19;
+    color: #fff !important;
+}
+
+td.red-cell {
+    background-color: #CE455F;
+    color: #fff !important;
+}
+
+td.neutral-cell {
+    background-color: #8A9399;
+    color: #fff !important;
+}
+
+
+/* ------- COLORED TEXT BLOCK IN TD ------ */
+
+td.text-block {
+    padding: .15em 0 !important;
+} 
+
+td > p[class^="bg-"] {
+    display: inline-block;
+    margin: 0;
+    padding: .65em;
+    color: #fff !important;
+}
+
+
+
+
+
+
+/* ---------------------------------------------
+ MEDIA QUERIES
+--------------------------------------------- */
+
+
+@media screen and (max-width: 60em) { 
+
+/* --  fade out any container below 60em -- */
+    .fade-out-container {
+        background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1));
+        height: 92%;
+        width: 15em;
+        position: absolute;
+        top 0;
+        right: 0;
+    }
+    
+/* --  positioning children -- */    
+    .fade-out-relative {
+        position: relative;
+}    
+    
+}/*max-width: 60em*/
+

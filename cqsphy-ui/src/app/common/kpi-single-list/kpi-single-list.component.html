@@ -1,0 +1,18 @@
+<ng-container *ngIf="kPIDetailsData">
+  <div class="row" *ngFor="let row of getKPIRows()">
+
+    <div class="col-xs-12 col-sm-4" *ngFor="let kPIDetailsData of getKPIColumns(row)">
+      <div class="panel">
+        <app-kpi-tile [currentMonthRecord]='kPIDetailsData.metricRankResults' [trendData]='kPIDetailsData.metricKpiTrends'></app-kpi-tile>
+      </div>
+      <!-- .panel -->
+      <p class="type-label-L3">{{kPIDetailsData.metricRankResults.metricCategory}}</p>
+
+    </div>
+    <!-- .col- -->
+
+  </div>
+  <!-- .row -->
+</ng-container>
+
+<div class="last-category-row-bottom-border"></div>

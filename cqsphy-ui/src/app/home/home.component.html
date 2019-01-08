@@ -1,0 +1,22 @@
+<!-- //////////////////////// CONTAINER FLUID WRAPPING PAGE ////////////////////// -->
+<div class="container-fluid">
+    <!-- //////////////////////////// HEADER BAR //////////////////////////// -->
+    <img class="brand-bar" src="assets/_images/brand-bar.svg">
+    <div class="header-fixed-top">
+        <i class="icon fa fa-user-md"></i>
+        <p>{{userShortName}}</p>
+        <img class="logo-tac pull-right" src="assets/_images/cqs-logo.svg">
+    </div>
+    <!-- .header-fixed-top -->
+
+    <!-- //////////////////////////// MAIN CONTENT  //////////////////////////// 
+    <router-outlet></router-outlet>-->
+
+    <!-- //////////////////////////// MAIN CONTENT  //////////////////////////// -->
+    <!-- --><main class="main-content" id="CQS-physician-page">
+        <router-outlet></router-outlet>
+    </main> 
+    <!-- .main-content  -->
+    <!-- //////////////////////////// END MAIN CONTENT //////////////////////////// -->
+</div>
+<!-- .container-fluid -->

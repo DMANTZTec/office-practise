@@ -1,0 +1,22 @@
+<bi-component-line-chart #lineChart *ngIf="chartValues" [data]="chartValues" [options]="lineChartOptions" [update]="updateLineChart"></bi-component-line-chart>
+
+<table class="chart-values">
+  <tbody>
+    <tr class="date-row">
+      <td>MAR<br>2018</td>
+      <td>APR</td>
+      <td>MAY</td>
+      <td>JUN</td>
+      <td>JUL</td>
+      <td>AUG<br>2018</td>
+    </tr>
+    <tr>
+      <td class="red bold">Not Met</td>
+      <td><i class="fa fa-ellipsis-h"></i></td>
+      <td><i class="fa fa-ellipsis-h red"></i></td>
+      <td>0.00</td>
+      <td>No Data</td>
+      <td class="bold red">Not Met</td>
+    </tr>
+  </tbody>
+</table>

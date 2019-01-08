@@ -1,0 +1,67 @@
+<ng-container *ngFor="let kPICategoryDataRecord of kPICategoryData">
+
+    <div class="row category-row">
+        <div class="col-xs-1">
+
+        </div>
+        <div class="col-xs-2">
+            <p class="type-display-H4">{{kPICategoryDataRecord.metricCategory}}</p>
+        </div>
+        <!-- .col- -->
+
+        <div class="col-xs-6">
+            <!-- NESTED .row -->
+            <div class="row nested-row">
+                <div class="col-xs-1">
+                    <div [attr.class]="'cqs-points-toggle-row sprite-toggle-row-points-'+kPICategoryDataRecord.uiPercentile">
+                    </div>
+                    <!-- .cqs-points-toggle-row -->
+                </div>
+                <!-- .col- -->
+                <div class="col-xs-11">
+                    <p class="type-label-L2 data-color-6">{{kPICategoryDataRecord.description}}</p>
+                </div>
+                <!-- .col- -->
+            </div>
+            <!-- .row -->
+        </div>
+        <!-- .col- -->
+
+        <div class="col-xs-3">
+            <div class="mini-indicator-wrapper pull-right">
+                <div class="mini-panel-indicator">
+                    <div class="panel-heading panel-heading-module-red">
+                    </div>
+                    <!-- .panel-heading-module -->
+                    <div class="panel-body">
+                        <p class="type-label-L3 red">{{kPICategoryDataRecord.redCount}}</p>
+                    </div>
+                    <!-- .panel-body -->
+                </div>
+                <!-- .panel -->
+                <div class="mini-panel-indicator">
+                    <div class="panel-heading panel-heading-module-yellow">
+                    </div>
+                    <!-- .panel-heading-module -->
+                    <div class="panel-body">
+                        <p class="type-label-L3 yellow">{{kPICategoryDataRecord.yellowCount}}</p>
+                    </div>
+                    <!-- .panel-body -->
+                </div>
+                <!-- .panel -->
+                <div class="mini-panel-indicator">
+                    <div class="panel-heading panel-heading-module-green">
+                    </div>
+                    <!-- .panel-heading-module -->
+                    <div class="panel-body">
+                        <p class="type-label-L3 green">{{kPICategoryDataRecord.greenCount}}</p>
+                    </div>
+                    <!-- .panel-body -->
+                </div>
+                <!-- .panel -->
+            </div>
+        </div>
+        <!-- .col- -->
+    </div>
+    <!-- .row -->
+</ng-container>

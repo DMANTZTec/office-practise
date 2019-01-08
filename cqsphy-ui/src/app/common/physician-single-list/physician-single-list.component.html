@@ -1,0 +1,36 @@
+<ng-container *ngIf="currentMonthPhyDetailsData">
+
+  <!-- //////////////////////////// COMPARE BUTTON //////////////////////////// -->
+  <div id="compare-btn-wrapper" class="not-visible">
+    <a class="compare-btn launch-modal" (click)="toPhysicianCompare()" data-toggle="modal" data-target="#modal">
+      <p>Compare selections</p>
+      <i class="fa fa-long-arrow-right"></i>
+      <i class="fa fa-long-arrow-left"></i>
+    </a>
+  </div>
+
+  <div class="row" *ngFor="let row of getPhyRows()">
+
+    <div class="col-xs-12 col-sm-4" *ngFor="let currentMonthPhyDetails of getPhyColumns(row)">
+      <div class="panel">
+        <app-physician-tile [currentMonthRecord]='currentMonthPhyDetails' [trendData]='phyDetailsData'></app-physician-tile>
+      </div>
+      <!-- .panel -->
+      <!-- <p class="type-label-L3 pull-left">{{currentMonthPhyDetails.entityName}}</p> -->
+      <div class="checkbox compare-checkbox pull-right">
+        <input type="checkbox" name="example-compare-check" [attr.id]="'comparechk'+currentMonthPhyDetails.physicianId" [attr.value]="currentMonthPhyDetails.physicianId"
+          (click)="physicianCompare()">
+        <label [attr.for]="currentMonthPhyDetails.physicianId">Compare</label>
+      </div>
+      <!-- .checkbox -->
+
+    </div>
+    <!-- .col- -->
+
+  </div>
+  <!-- .row -->
+</ng-container>
+
+<div class="last-category-row-bottom-border"></div>
+
+<app-modal></app-modal>

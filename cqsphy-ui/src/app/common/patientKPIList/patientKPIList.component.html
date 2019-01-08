@@ -1,0 +1,4 @@
+<ng-container *ngFor='let parentKPI of parentKPIList'>
+    <app-patientMetricRow [MRN]='MRN' [patientMetricFromDB]='patientMetricList' [metricID]='parentKPI.id'>
+    </app-patientMetricRow>
+</ng-container>

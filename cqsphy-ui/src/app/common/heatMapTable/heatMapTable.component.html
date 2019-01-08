@@ -1,0 +1,42 @@
+<div class="table-responsive">
+    <table class="table kpi-heatmap-table">
+        <thead>
+            <tr>
+                <th></th>
+                <th>MAR 2016</th>
+                <th>APR 2016</th>
+                <th>MAY 2016</th>
+                <th>JUN 2016</th>
+                <th>JUL 2016</th>
+                <th>AUG 2016</th>
+                <th>SEP 2016</th>
+                <th>OCT 2016</th>
+                <th>NOV 2016</th>
+                <th>DEC 2016</th>
+                <th>JAN 2017</th>
+                <th>FEB 2017</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr *ngFor='let kPIHeatMapDetail of kPIHeatMapDetailList'>
+                <td class="double-points-kpi-label">
+                    {{ kPIHeatMapDetail.metricLabelText }}
+                    <!-- <span><br>Double points KPI</span> -->
+                <td class={{kPIHeatMapDetail.month1cellClass}}>{{ kPIHeatMapDetail.month1 }}</td>
+                <td class={{kPIHeatMapDetail.month2cellClass}}>{{ kPIHeatMapDetail.month2 }}</td>
+                <td class={{kPIHeatMapDetail.month3cellClass}}>{{ kPIHeatMapDetail.month3 }}</td>
+                <td class={{kPIHeatMapDetail.month4cellClass}}>{{ kPIHeatMapDetail.month4 }}</td>
+                <td class={{kPIHeatMapDetail.month5cellClass}}>{{ kPIHeatMapDetail.month5 }}</td>
+                <td class={{kPIHeatMapDetail.month6cellClass}}>{{ kPIHeatMapDetail.month6 }}</td>
+                <td class={{kPIHeatMapDetail.month7cellClass}}>{{ kPIHeatMapDetail.month7 }}</td>
+                <td class={{kPIHeatMapDetail.month8cellClass}}>{{ kPIHeatMapDetail.month8 }}</td>
+                <td class={{kPIHeatMapDetail.month9cellClass}}>{{ kPIHeatMapDetail.month9 }}</td>
+                <td class={{kPIHeatMapDetail.month10cellClass}}>{{ kPIHeatMapDetail.month10 }}</td>
+                <td class={{kPIHeatMapDetail.month11cellClass}}>{{ kPIHeatMapDetail.month11}}</td>
+                <td class={{kPIHeatMapDetail.month12cellClass}}>{{ kPIHeatMapDetail.month12 }}</td>
+
+            </tr>
+        </tbody>
+    </table>
+</div><!-- .table-responsive -->

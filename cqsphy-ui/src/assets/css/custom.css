@@ -1,0 +1,1534 @@
+@charset "UTF-8";
+
+/* ----------------------------------------------------
+-------------------------------------------------------
+
+            CQS PHYSICIAN - CUSTOM.CSS
+
+-------------------------------------------------------
+---------------------------------------------------- */
+
+
+/* |||||||||||||||||||||||||||||||||||||||
+
+    PLACEHOLDER FOR PROTOTYPE ONLY
+
+|||||||||||||||||||||||||||||||||||||||||| */
+
+.score-over-time-wrapper img {
+    max-width: 41em;
+}
+
+.kpi-chart-wrapper img {
+    margin: 0 auto;
+    padding-right: 3em;
+    max-width: 675px;
+}
+
+/*REMOVE HTML*/
+.examples-spacer {
+    margin: 10em auto;
+}
+
+/* |||||||||||||||||||||||||||||||||||||||
+
+                OVERRIDES
+
+|||||||||||||||||||||||||||||||||||||||||| */
+
+
+.sentence-builder-wrapper, .sentence-builder-wrapper .refresh-block  {
+    border: 2px solid #ccc;
+    border-left: 0;
+    background-color: #fff;
+}
+
+.sentence-builder-wrapper {
+    margin: 0 0 3em -2.2em;
+    border-left: 2px solid #fff;
+}
+
+.panel-container {
+    padding: 2em 3em 2em 3em;
+}
+
+
+/* |||||||||||||||||||||||||||||||||||||||
+
+                MAIN
+
+|||||||||||||||||||||||||||||||||||||||||| */
+
+
+.multiselect-limited-width {
+    max-width: 135px;
+}
+
+.header-fixed-top i {
+    font-size: 2em;
+    margin: .4em .25em 0 .4em;
+    color: #005595;
+}
+
+.header-fixed-top i + p {
+    display: inline-block;
+    font-size: 1.1em;
+    color: #005595;
+}
+
+.main-content {
+    margin: 0 auto;
+    max-width: 140em; /* 1400px */
+    padding: 4em 3em;
+}
+
+.as-of-date {
+    display: inline-block;
+    font-size: 1.4em;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 1em 1em .4em 1em;
+    color: #4d4d4d;
+}
+
+.census-wrapper {
+    padding: 0 1em 0 0;
+}
+
+.census-wrapper p {
+    margin-bottom: 0;
+    color: #005595;
+}
+
+.census-wrapper p:nth-of-type(1) {
+    font-size: 3.2em;
+}
+
+.census-wrapper p:nth-of-type(2) {
+    font-size: 1.3em;
+    line-height: 0;
+}
+
+/* -------- TABS GLOBAL -------- */
+
+.tabs-wrapper {
+    position: relative;
+    margin: 2em auto;
+}
+
+.tab-content {
+    position: relative;
+    border: 2px solid #ccc !important;
+    border-top: 0 !important;
+    border-radius: .7em;
+    padding: 2em 2em 3em 2em;
+}
+
+.tab-blue-bar {
+    position: absolute;
+    top 0;
+    height: .7em;
+    width: 100%;
+    border-top-left-radius: .7em;
+    border-top-right-radius: .7em;
+    background-color: #448DB9;
+}
+
+ul.nav-tabs {
+    border-bottom: 0;
+}
+
+ul.nav-tabs li {
+    padding-left: .25em;
+}
+
+ul.nav-tabs li:first-of-type {
+    padding-left: .75em;
+}
+
+ul.nav-tabs li a {
+    font-size: 1.44em;
+    font-weight: 600;
+    padding: 1em 1.5em .7em 1.5em;
+    border: 1px solid #ccc;
+    border-bottom: 0;
+    border-top-left-radius: .7em;
+    border-top-right-radius: .7em;
+    color: #448DB9;
+}   
+
+ul.nav-tabs li a:hover {
+    background-color: #448DB9;
+    color: #fff;
+}
+
+ul.nav-tabs li.active a {
+    background-color: #448DB9 !important;
+    color: #fff !important;
+}
+
+ul.nav-tabs li.active a:hover {
+    color: #fff;
+}
+
+
+
+/* |||||||||||||||||||||||||||||||||||||||
+
+            SUMMARY TAB
+
+|||||||||||||||||||||||||||||||||||||||||| */
+   
+.tab-pane > h1 {
+    display: inline-block;
+    font-size: 2.8em;
+    margin: 1em 0 1em 1em;
+    color: #005595;
+}
+
+h1 {
+    color: #005595;
+}
+
+.cqs-score-summary-block {
+    margin: -1em 0 3em 4em;
+    text-align: center;
+}
+
+.cqs-score-summary-block > p[class^="type-display-data-"] {
+    padding-top: 1.35em;
+}
+
+.score-over-time-wrapper p {
+    font-size: 2.2em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.score-info-block {
+    display: inline-block;
+    max-width: 18em;
+    margin: 9em 0 0 4em;
+}
+
+.score-info-block > .row:nth-of-type(1) {
+    border-bottom: 1px solid #eaeaea;
+    padding: 0 0 1em 0;
+    margin: 0 0 1.4em 0;
+}
+
+.score-info-block > .row:nth-of-type(1)  > div[class^="col-"]:nth-of-type(1) > div {
+    margin-top: -3.4em;
+}
+
+.score-info-block > .row:nth-of-type(1)  > div[class^="col-"]:nth-of-type(1) > div > p:nth-of-type(1) {
+    font-size: 1.85em;
+    font-weight: 600;
+}
+
+.score-info-block > .row:nth-of-type(1)  > div[class^="col-"]:nth-of-type(1) > div > p:nth-of-type(2) {
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-top: -.1em;
+}
+
+.score-info-block > .nested-row:nth-of-type(2) > div[class^="col-"] > p {
+    font-weight: 400;
+    margin-bottom: .75em;
+}
+
+
+/* -- KPI Category label -- */
+
+.panel + p.type-label-L3 {
+    margin: -1em 0 1.5em 0;
+    text-align: right;
+    color: #4d4d4d;
+}
+
+p.panel-category-label {
+    margin: -1.2em .4em 1.1em 0;
+    text-align: right;
+}
+
+
+/* -- .COLLAPSE ROWS -- */
+
+.category-row {
+    padding: 1em;
+    margin-left: 3.1em;
+    margin-right: 1em;
+    border-top: 2px solid #eaeaea;
+}
+
+.last-category-row-bottom-border {
+    border-bottom: 2px solid #eaeaea;
+    margin-left: 3.1em;
+    margin-right: 1em;
+}
+
+.category-row i.icon {
+    font-size: 2em;
+    margin: .5em 1em 0 -2.5em;
+}
+
+.category-row p.type-display-H4 {
+    font-weight: 400;
+    padding-top: .4em;
+    margin-left: -5.25em;
+}
+
+.category-row .nested-row > div[class^="col-"] > p[class^="type-label-L"] {
+    font-weight: 700;
+    margin: .15em 0 0 0;
+    padding-top: .65em;
+}
+
+.mini-indicator-wrapper {
+    margin-top: .3em;
+}
+
+.well {
+    background-color: #fff;
+    border: 0px;
+    box-shadow: 0 0 0 rgba(0,0,0,0.0);
+    padding: 1em 0 0 0;
+}
+
+
+/*--------  KPI TILES  --------*/
+
+.panel-heading.panel-heading-module {
+    height: 4em;
+}
+
+.panel-heading-module .kpi-name {
+    padding-top: .65em;
+    margin: 0;
+}
+
+.panel-heading-module .kpi-name.has-sibling {
+    padding-top: .2em;
+} 
+
+.panel-heading .kpi-definition-label {
+    font-size: .75em;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.percent-met-wrapper {
+    color: #646464;
+}
+
+.percent-met-wrapper p:nth-of-type(1){
+    font-size: 3em;
+    margin: 0;
+}
+
+.percent-met-wrapper p:nth-of-type(2){
+    font-size: 1.2em;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: -.5em 0 .25em 0;
+}
+
+.percent-met-wrapper p:nth-of-type(3){
+    font-size: 1.2em;
+    font-weight: 600;
+    margin: 0;
+}
+
+.percent-met-wrapper p:nth-of-type(4){
+    font-size: 1em;
+    font-weight: 600;
+    margin: 0 0 -1.4em 0;
+}
+
+.tile-fkc-score {
+    text-decoration: underline dotted;
+}
+
+/*--------  INVERTED PERCENT MET  --------*/
+
+.percent-met-wrapper.inverted p.lower-is-better {
+    width: 50px;
+    font-size: 1.1em;
+    font-weight: 700;
+    font-style: italic;
+    line-height: 1;
+    color: #66A305;
+    margin: 1em 7em 0 0;
+}
+
+.percent-met-wrapper.inverted p:nth-of-type(2) {
+    font-size: 3em;
+    font-weight: 400;
+    margin: 0;
+}
+
+.percent-met-wrapper.inverted p:nth-of-type(3) {
+    font-size: 1.2em;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: -.5em 0 .5em 0;
+}
+
+.percent-met-wrapper.inverted p:nth-of-type(4) {
+    font-size: 1.2em;
+    font-weight: 600;
+    margin: 0;
+}
+
+.percent-met-wrapper.inverted p:nth-of-type(5) {
+    font-size: 1em;
+    font-weight: 600;
+    margin: 0 0 -1em 0;
+}
+
+.percent-met-wrapper.inverted span.italic {
+    font-weight: 700;
+    font-style: italic;
+}
+
+/*--------  CQS POINTS IN KPI TILES  --------*/
+
+.cqs-points-wrapper {
+    position: relative;
+    border-top: 1px solid #eaeaea;
+    margin: 1em 0 1em 0;
+    padding: .7em 0 0 0;
+    width: 100%;
+}
+
+.cqs-points-wrapper p:nth-of-type(1) {
+    font-size: 6em;
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
+}
+
+.cqs-points-wrapper p:nth-of-type(2) {
+    font-size: 1.5em;
+    font-weight: 600;
+    text-align: center;
+    margin: -.75em 0 0 0;
+    color: #4EA8C4;
+}
+
+.cqs-points-wrapper p:nth-of-type(3) {
+    font-style: italic;
+    font-size: 1.2em;
+    font-weight: 700;
+    text-align: center;
+    margin: .2em 0 0 0;
+    color: #4EA8C4;
+}
+
+/*--------  STICKERS CONTAINER  --------*/
+
+.points-weight-container {
+    position: absolute;
+    top: 5px;
+    left: -14px;
+    width: 85px;
+    height: 82px;
+}
+
+/*--------  THRESHOLDS VALUES  --------*/
+
+.thresholds-container {
+    position: relative;
+    width: 125px;
+    height: 360px;
+    border: 2px solid #eaeaea;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    margin: .25em 0 0 -1.85em;
+    color: #4d4d4d;
+}
+
+.thresholds-container > p:nth-of-type(1) {
+    font-size: 1.4em;
+    font-weight: 700;
+    line-height: 1;
+    text-transform: uppercase;
+    text-align: center;
+    margin: .6em auto 0 auto;
+}
+
+.thresholds-container > p:nth-of-type(2) {
+    display: inline-block;
+    font-size: 1em;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: .25em 0 .25em 1.5em;
+}
+
+.thresholds-container > p:nth-of-type(3) {
+    display: inline-block;
+    font-size: 1em;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: .25em 0 .25em 1.85em;
+}
+
+
+/*-----  CHART CONTAINER ------*/
+
+.thresholds-container .thresholds-chart {
+    width: 90px;
+    height: 290px;
+    border-top: 1px solid #eaeaea;
+    margin: 0 0 0 1.4em;
+}
+
+/*-----  % VALUES TABLE ------*/
+
+table.threshold-percent {
+    position: absolute;
+    top: 35px;
+    left: 8px;
+    font-size: 1.1em;
+    font-weight: 600;
+    text-align: right;
+    margin: 2.3em 0 0 1em;
+}
+
+table.threshold-percent .yellow {
+    color: #ef9506 !important;
+}
+
+table.threshold-percent span.grey-tick {
+    color: #aeaeae;
+}
+
+table.threshold-percent tr:nth-of-type(2) td  {
+    padding-top: 1.1em;
+}
+
+table.threshold-percent tr:nth-of-type(3) td  {
+    padding-top: 8.25em;
+}
+
+table.threshold-percent tr:nth-of-type(4) td  {
+    padding-top: 10.7em;
+}
+
+/* ----- .inverted  ------ */
+table.threshold-percent.inverted tr:nth-of-type(2) td  {
+    padding-top: 10.7em;
+}
+
+table.threshold-percent.inverted tr:nth-of-type(4) td  {
+    padding-top: 1.1em;
+}
+
+
+/*--------  PHYSICIAN TILES  --------*/
+
+.panel-heading-module-physician-score {
+    background-color: #005595;   
+}
+
+.panel-heading-module .physician-name.has-sibling {
+    padding-top: .2em;
+} 
+
+.patient-count-label {
+    font-size: .75em;
+    font-weight: 600;
+    font-style: italic;
+    margin-top: -.9em;
+} 
+
+.cqs-score-block {
+    margin: .5em 0 0 -1em;
+}
+
+div[class^="cqs-score-block"] > p[class^="type-label-L"] {
+    font-size: 1.2em;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.2;
+    
+    margin-bottom: .5em;
+}
+
+div[class^="cqs-score-block"] > p.type-display-data-3 {
+    font-size: 4em;
+    font-weight: 300;
+    text-align: center;
+    padding-top: 1.3em;
+    margin-top: -.1em;
+}
+
+.cqs-score-info-block {
+    padding: 2em 0 0 3em;   
+}
+
+.cqs-score-info-block p:nth-of-type(1) {
+    font-size: 1.3em;
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 1em 0 .5em 0;
+    padding: .5em 0 0 0;
+}
+
+.cqs-score-info-block p:nth-of-type(2) {
+    max-width: 10em;
+    padding: .5em 0 0 0;
+    border-top: 1px solid #eaeaea;
+}
+
+
+
+/* |||||||||||||||||||||||||||||||||||||||
+
+            PATIENT LIST TAB
+
+|||||||||||||||||||||||||||||||||||||||||| */
+
+tr.group-heading {
+    cursor: default !important;
+    margin: 0 0 1.5em 0;
+    border-top: 1px solid #cccccc;
+}
+
+tr.group-heading td {
+    font-size: 1.5em !important;
+    padding: .4em 0 .4em .5em !important;
+    border: none !important;
+    border-top: 1px solid #cccccc !important;
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+    color: #448db9;
+}
+
+tr.group-heading.empty-row td {
+    height: 1em;
+    border: none !important;
+}
+
+.table-wrapper {
+    border: 2px solid #B3B3B3;
+    border-radius: 7px;
+    padding: 2em;
+}
+
+.export-list-tab {
+    margin: -6.7em 0 0 0;
+    padding: 1em 1em 0 1em;
+    border: 2px solid #B3B3B3;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border-bottom: 2px solid #fff;
+    background-color: #fff;
+}
+
+.export-list-tab i {
+    font-size: 2.3em;
+    margin-right: .2em;
+}
+
+.export-list-tab p {
+    display: inline-block;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #005595;
+}
+
+.legend-label {
+    font-size: 1.1em;
+    font-weight: 600;
+    margin: -1em 1.2em 0 .2em;
+    color: #4d4d4d;
+}
+
+.legend-icon {
+    width: 1.5em;
+    height: auto;
+    margin-top: -1em;
+}
+
+.table.patient-details-list {
+    font-size: 1.2em;
+    border-spacing: 0 .25em;
+}
+
+.table.patient-details-list th {
+    font-size: 1.1em;
+    font-weight: 600;
+    letter-spacing: .01em;
+    color: #448db9;
+    border-bottom: none !important;
+}
+
+.table.patient-details-list th:last-of-type {
+    text-align: right;
+    padding-right: 2em;
+}
+
+.table.patient-details-list td {
+    font-size: 1.1em;
+    padding: .75em;
+}
+
+.table.patient-details-list td.red {
+    font-size: 1.4em;
+    text-align: right;
+    padding-right: 2em;
+}
+
+.table.patient-details-list td > img {
+    width: 1.1em !important;
+    height: auto;
+}
+
+.table.patient-details-list td i {
+    font-size: 1.5em;
+    color: #005595;
+}
+
+.table.patient-details-list td:not(.hidden-row) {
+    vertical-align: middle;
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    border-left: none;
+    border-right: none;
+    cursor: pointer;
+}
+
+.table.patient-details-list th:first-of-type i {
+    font-size: 1.5em;
+    margin-left: .4em;
+}
+
+.table.patient-details-list td:nth-of-type(2) {
+    white-space: nowrap;
+}
+
+.table.patient-details-list td:nth-of-type(2) > img {
+    width: 1.25em;
+    height: 1.25em;
+}
+
+.table.patient-details-list a.btn {
+    font-size: 1em;
+    display: inline-block;
+    margin: 0;
+}
+
+.hidden-row {
+    padding: 0 !important;
+    border: none !important;
+}
+
+.hidden-row .well-wrapper {
+    background-color: #f9f9f9;
+    border: 1px solid #e5e5e5;
+    margin: 0 0 1.5em 0;
+    width: 100%;
+}
+
+.collapse .well {
+    background-color: #f9f9f9;
+}
+
+/* --------- Nested KPIs .collapse  ---------- */
+
+.table-responsive {
+    -ms-overflow-style: none;
+    overflow: auto;
+}
+
+.patient-details-list + a.btn {
+    display: block;
+    max-width: 20em;
+    margin: 1em auto;
+}
+
+div[class^="kpi-details-row-"] {
+    margin: .5em;
+    border: 1px solid #e5e5e5;
+    border-radius: 7px;
+    background-color: #f9f9f9;
+}
+
+div[class^="kpi-details-row-"] .well-wrapper {
+    margin: .25em;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+div[class^="kpi-details-row-"] .well {
+    background-color: #f9f9f9;
+}
+
+.hidden-row .well-wrapper {
+    min-width: 70em;
+    max-width: 70em;
+}
+
+.nested-KPI-block h3 {
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.4em;
+    font-weight: 400;
+    margin: 0 0 0 .5em;
+    padding: 0;
+    color: #005595;
+}
+
+.nested-KPI-block h4 {
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    font-style: italic;
+    margin: .25em 0 .5em 4em;
+}
+
+.nested-KPI-block i.fa-circle {
+    font-size: 1.2em !important;
+    margin: -2.35em 1.6em 0 0;
+}
+
+.nested-KPI-block i.fa-chevron-right {
+    margin: .75em .5em 0 1em;
+    color: #848484 !important;
+}
+
+.nested-KPI-block i.fa-chevron-down {
+    cursor: pointer;
+    margin: .75em .2em 0 1em;
+    color: #848484 !important;
+}
+
+.kpi-info-legend-wrapper {
+    margin: 0 0 0 1em;
+    padding: 2em 2em .5em 2em;
+    border: 1px solid #e5e5e5;
+    border-radius: 7px;
+    background-color: #fff;
+}
+
+.kpi-info-legend-wrapper h5 {
+    font-size: .9em;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 auto 1em auto;
+    color: #969696;
+}
+
+.kpi-info-legend-wrapper h5 + p {
+    font-size: .95em;
+    font-weight: 600;
+    margin: 0 0 2em 0;
+    color: #4D4D4D;
+}
+
+.kpi-info-legend-wrapper p span {
+    font-style: italic;
+    font-weight: 700;
+}
+
+.legend-block .target-legend img {
+    width: 1.25em;
+    height: auto;
+}
+
+.legend-block .range-legend img {
+    width: 3em;
+    height: auto;
+}
+
+.legend-block .mix-met-legend i {
+    height: 1.5em;
+    font-size: 2em !important;
+    color: black !important;
+}
+
+.legend-block .mix-met-legend p {
+    display: inline;
+    padding-top: .25em;
+}
+
+.legend-block .mix-notmet-legend i {
+    height: 1.5em;
+    font-size: 2em !important;
+}
+
+.legend-block .mix-notmet-legend p {
+    display: inline;
+    padding-top: .25em;
+}
+
+.legend-block .additional-info p {
+    border-top: 2px solid #babcbe;
+    margin: 1.5em auto;
+}
+
+.legend-block p {
+    display: inline-block;
+    font-size: .9em;
+    color: #4D4D4D;
+}
+
+.legend-block a {   
+    display: block;
+    margin: 2em 0 0 0;
+}
+
+.legend-block a p {
+    text-decoration: underline;
+    color: #005595;
+}
+
+.kpi-chart-wrapper {
+    margin: 0 1em 0 0;
+    border: 1px solid #e5e5e5;
+    border-radius: 7px;
+    background-color: #fff;
+}
+
+.kpi-chart-wrapper h5 {
+    font-size: 1.2em;
+    font-weight: 600;
+    margin: 2em 0 1em 2em;
+    color: #4D4D4D;
+}
+
+.kpi-chart-wrapper table.chart-values {
+    width: 670px;
+    margin: 0 auto 3em auto;
+    text-align: center;
+    table-layout: fixed;
+}
+
+.kpi-chart-wrapper table.chart-values td {
+    font-size: .95em !important;
+    font-weight: 600;
+    border: 1px solid #B3B3B3 !important;
+    border-top: 0 !important;
+    border-bottom: 0 !important;
+    padding: 1em 0 !important;
+    word-wrap: break-word;
+}
+
+.kpi-chart-wrapper table.chart-values td.red {
+    font-size: 1.2em !important;
+    text-align: center;
+}
+
+.kpi-chart-wrapper.composite {
+    padding-top: 2em;
+}
+
+.kpi-chart-wrapper.composite h5.centered-chart-title {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 1.5em auto 0 auto;
+}
+
+.kpi-chart-wrapper.composite table.chart-values {
+    margin-bottom: .5em;
+}
+
+.kpi-chart-wrapper.composite .composite-wrapper {
+    margin: 2em;
+    border: 1px solid #e5e5e5;
+    border-radius: 7px;
+    background-color: #f9f9f9;
+}
+
+.kpi-chart-wrapper.composite i.fa-ellipsis-h {
+    font-size: 3em;
+    color: black;
+}
+
+.composite-metric-spacer {
+    height: 2px;
+    margin: 2em auto;
+    width: 85%;
+    background-color: #fff;
+}
+
+td.bold {
+    font-weight: 700 !important;
+}
+
+.kpi-chart-wrapper table.chart-values tr.date-row > td {
+    font-size: .95em !important;
+    font-weight: 400;
+    padding: 0 !important;
+}
+
+
+
+/* |||||||||||||||||||||||||||||||||||||||
+
+                HEATMAP TAB
+
+|||||||||||||||||||||||||||||||||||||||||| */
+
+
+.table.kpi-heatmap-table th {
+    font-size: 1.1em;
+    text-align: center;
+}
+
+img.heatmap-legend {
+    width: 32em;
+    height: auto;
+}
+
+table.kpi-heatmap-table td {
+    font-size: 1.2em;
+    font-weight: 600;
+    text-align: center;
+    vertical-align: middle;
+}
+
+table.kpi-heatmap-table td:first-of-type {
+    text-align: left;
+    vertical-align: middle;
+}
+
+
+tr.double-points-kpi-row td {
+    vertical-align: middle !important;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+}
+
+tr.double-points-kpi-row td:first-of-type {
+    vertical-align: middle;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+td.double-points-kpi-label span {
+    font-style: italic;
+    font-weight: 600;
+    color: #4EA8C4;
+}
+
+.red-step-cell {
+    background-color: #de7185;
+    color: #fff;
+}
+
+.green-step-cell {
+    background-color: #9cd063;
+    color: #fff;
+}
+
+
+/* |||||||||||||||||||||||||||||||||||||||
+
+             GROUP SUMMARY
+
+|||||||||||||||||||||||||||||||||||||||||| */
+
+.group-summary-row {
+    border-bottom: 2px solid #eaeaea;
+    margin: 2em auto 2em auto;
+    padding: 0 0 .5em 0;
+    max-width: 98%;
+}
+
+.group-summary-row p.type-display-H4 {
+    font-weight: 400;
+    margin: .3em 0 0 -.25em;
+}
+
+.group-summary-row .type-display-data-4 {
+    font-size: 2.9em;
+    text-align: right;
+    padding-right: .25em;
+}
+
+.group-summary-row div[class^="col-"] > p[class^="type-label-L"] {
+    font-weight: 700;
+    margin: .15em 0 0 .5em;
+    padding-top: .45em;
+}
+
+
+
+
+/* |||||||||||||||||||||||||||||||||||||||
+
+              GROUP PAGE
+
+|||||||||||||||||||||||||||||||||||||||||| */
+
+
+/*--------  SUMMARY CQS SCORES TABLE  --------*/
+
+#CQS-physician-group-page .tab-blue-bar {
+    background-color: #005595;
+}
+
+#CQS-physician-group-page ul.nav-tabs li a {
+    font-size: 1.44em;
+    font-weight: 600;
+    padding: 1em 1.5em .7em 1.5em;
+    border: 1px solid #ccc;
+    border-bottom: 0;
+    border-top-left-radius: .7em;
+    border-top-right-radius: .7em;
+    color: #005595;
+}   
+
+#CQS-physician-group-page ul.nav-tabs li a:hover {
+    background-color: #005595;
+    color: #fff;
+}
+
+#CQS-physician-group-page ul.nav-tabs li.active a {
+    background-color: #005595 !important;
+    color: #fff !important;
+}
+
+.summary-score-table {
+    text-align: center;
+}
+
+.summary-score-table th {
+    font-size: 1.1em;
+    text-align: center;
+}
+
+.summary-score-table td {
+    font-size: 1.4em;
+    padding-top: 1.2em !important;
+}
+
+.summary-score-table td:first-of-type {
+    font-size: 1.3em;
+    font-weight: 600;
+    text-align: left;
+    padding-top: .6em !important;
+    color: #005595;
+}
+
+.summary-score-table td:first-of-type span {
+    font-size: .9em;
+    font-weight: 600;
+    color: #4d4d4d;
+}
+
+
+/* ------- Clinic Compare Modal --------- */
+
+.not-visible {
+    display: none;
+}
+
+#compare-btn-wrapper {
+    position: relative;
+    z-index: 50;
+}
+
+.compare-btn {
+    display: inline-block;
+    cursor: pointer;
+	position: fixed;
+	right: 4em;
+	bottom: 10em;
+    width: 12em;
+	height: 12em;
+    color: #fff;
+    background-color: #26BEC9;
+	border-radius: 7em;
+    font-size: 1.2em;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1.2;
+    letter-spacing: .03em;
+    text-decoration: none;
+}
+
+.compare-btn:hover {
+    color: #fff;
+    background-color: #005595;
+}
+
+.compare-btn p {
+    font-size: 1.2em;
+    margin: 2.8em auto 1em auto;
+}
+
+.compare-btn i {
+    display: block;
+    font-size: 1.7em;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.compare-btn i:nth-of-type(2) {
+    margin-top: -1.5em;
+}
+
+.table-scroll-y {
+    max-height: 52em;
+}
+
+.compare-grid .table > thead > tr:first-of-type > th {
+    padding-bottom: 0;
+    border-bottom: 1px solid #fff;
+}
+
+.compare-grid .table > thead > tr:last-of-type > th {
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    font-size: .8em;
+    font-weight: 400;
+    background-color: #fff;
+    padding: 0 .25em 0 .25em;
+}
+
+.toggle-highlight {
+    margin-left: 2em;
+}
+
+.toggle-highlight .checkbox {
+    display: inline-block;
+    margin-right: 2em;
+}
+
+.toggle-highlight i {
+    font-size: 1.25em;
+    vertical-align: bottom;
+    margin: 0 0 0 -.4em;
+}
+
+.compare-grid .table > thead > tr:nth-of-type(2) > th > .toggle-highlight p:first-of-type {
+    display: inline-block;
+    font-weight: 700;
+    margin: 0 .5em 0 1em;
+}
+
+.compare-grid .table > thead > tr:nth-of-type(2) > th p {
+    font-size: 1.1em;
+    margin: -.85em 0 0 .6em;
+    padding-bottom: .75em;
+    color: #407C96;
+}
+
+.compare-grid .table > thead > tr:nth-of-type(2) > th p > i {
+    margin-left: .4em;
+}
+
+.compare-grid .category-name-row {
+    font-weight: 600;
+    text-transform: uppercase;
+    border: none;
+    color: #9b9b9b;
+    padding-top: 1.5em;
+}
+
+.compare-grid .table tbody > tr:first-of-type .category-name-row {
+    padding-top: 1em;
+}
+
+table.compare-grid {
+    font-size: 1.4em;
+}
+
+table.compare-grid td p {
+    display: inline-block;
+    margin: 0;
+    font-weight: 700;
+    padding: .65em .65em .65em 1.1em;
+}
+
+table.compare-grid td span:nth-of-type(1) {
+    margin-left: .7em;
+}
+
+table.compare-grid td span:nth-of-type(2) {
+    color: #d8d8d8;
+    padding: 0 0 0 .2em;
+}
+
+table.compare-grid td p[class^="bg-"] {
+    padding-left: 1.25em;
+    padding-right: 1.25em;
+}
+
+
+@keyframes wiggle {
+  20%  { transform: translateY(3px);  }
+  40%  { transform: translateY(-3px); }
+  60%  { transform: translateY(1px);  }
+  80%  { transform: translateY(-1px); }
+  100% { transform: translateY(0);    }
+}
+
+.needs-refresh.wiggle {
+  animation: wiggle 1s ease;
+  animation-iteration-count: 2;
+}
+
+
+/* |||||||||||||||||||||||||||||||||||||||
+
+              MEDIA QUERIES
+
+|||||||||||||||||||||||||||||||||||||||||| */
+
+
+
+@media screen and (max-width: 95em) { 
+  
+    
+    .main-contain {
+        padding-right: 5;
+        padding-left: 5;
+    }
+    
+    
+}/*max-width: 95em*/
+
+
+
+
+
+
+
+@media screen and (max-width: 85em) { 
+    
+
+    .panel-heading {
+        font-size: 1.4em;   
+    }
+    
+    .panel-heading .kpi-definition-label {
+        font-size: .85em;
+        margin: 0 0 .2em 0;
+    }
+    
+    .panel-heading-module .kpi-name.has-sibling {
+        padding-top: 0;
+    } 
+    
+    .percent-met-wrapper p:nth-of-type(3){
+        font-size: 1.1em;
+    }
+    
+    .percent-met-wrapper p:nth-of-type(4){
+        font-size: 1em;
+    }
+    
+    .percent-met-wrapper.inverted p:nth-of-type(4) {
+        font-size: 1.1em;
+    }
+
+    .cqs-points-wrapper {
+        margin: .75em 0 .5em 1em;
+        padding: 1em 0 0 0;
+    }
+    
+    .points-weight-container {
+        left: -20px;
+    }
+    
+    .thresholds-container {
+        margin: .25em 0 0 -2em;
+    }
+    
+    .thresholds-container > p:nth-of-type(1) {
+        font-size: 1.3em;
+    }
+
+    .thresholds-container > p:nth-of-type(2) {
+        margin: .25em 0 .25em .8em;
+    }
+
+    .thresholds-container > p:nth-of-type(3) {
+        margin: .25em 0 .25em 1.2em;
+    }
+    
+    table.threshold-percent {
+        margin: 2.1em 0 0 .3em;
+    }
+    
+    .thresholds-container .thresholds-chart {
+        margin: 0 0 0 .3em;
+    }
+    
+    
+}/*max-width: 85em*/
+
+
+
+
+
+
+@media screen and (max-width: 80em) { 
+
+
+    .thresholds-container {
+        margin: .25em 0 0 -2.3em;
+    }
+  
+    
+}/*max-width: 80em*/
+
+
+
+
+@media screen and (max-width: 78em) { 
+
+
+    .thresholds-container {
+        margin: .25em 0 0 -2.1em;
+    }
+  
+    
+}/*max-width: 78em*/
+
+
+
+
+
+
+@media screen and (max-width: 75em) { 
+ 
+    
+    .score-info-block {
+        padding-left: 2em;
+    }
+    
+    .panel-heading {
+        font-size: 1.3em;   
+    }
+    
+    .cqs-points-wrapper {
+        margin: .75em 0 .5em 0;
+        padding: 2em 0 0 0;
+    }
+    
+    .cqs-points-wrapper p:nth-of-type(2) {
+        font-size: 1.35em;
+    }
+    
+    .cqs-points-wrapper p:nth-of-type(3) {
+        font-size: 1.15em;
+        letter-spacing: .02em;
+    }
+    
+    .points-weight-container {
+        left: -13px;
+    }
+    
+    .thresholds-container {
+        width: 110px;
+        margin: .25em 0 0 -2.7em;
+    }
+    
+    .thresholds-container > p:nth-of-type(1) {
+        font-size: 1.1em;
+    }
+    
+    .thresholds-container > p:nth-of-type(2) {
+        font-size: .9em;
+         margin: .45em 0 .25em 1em;
+    }
+    
+    .thresholds-container > p:nth-of-type(3) {
+        font-size: .9em;
+    }
+    
+    table.threshold-percent {
+        margin: 1.6em 0 0 0;
+    }
+    
+    .thresholds-container .thresholds-chart {
+        margin: 0;
+    }
+    
+    .thresholds-container.CAHPS-top-box .thresholds-chart {
+        margin: 0 0 0 0;
+    }
+    
+    
+}/*max-width: 75em*/
+
+
+
+
+
+
+@media screen and (max-width: 70em) { 
+
+     .cqs-points-wrapper {
+        margin: .75em 0 .5em 0;
+        padding: 3.25em 0 0 0;
+    }
+    
+    .cqs-points-wrapper p:nth-of-type(3) {
+        font-size: 1.1em;
+    }
+    
+    .percent-met-wrapper.inverted p.lower-is-better {
+        margin: 1em 3.5em 0 0;
+    }
+    
+    .percent-met-wrapper.inverted p:nth-of-type(4){
+        font-size: 1em;
+    }
+    
+    .cqs-points-wrapper.CAHPS-top-box {
+        margin: .2em 0 1em 0;
+        padding: 2em 0 0 .5em;
+    }  
+    
+    .thresholds-container {
+        width: 105px;
+        margin: .25em 0 0 -3em;
+    }
+    
+    .thresholds-container .thresholds-chart {
+        margin: 0 0 0 .3em;
+    }
+  
+    
+}/*max-width: 70em*/
+
+
+
+
+
+
+
+@media screen and (max-width: 65em) { 
+
+    .thresholds-container {
+        width: 100px;
+        margin: .25em 0 0 -1.6em;
+    }
+    
+
+    
+}/*max-width: 65em*/
+
+
+.main-content-faux-modal {
+    margin: 4em auto;
+    max-width: 95%;
+}
+
+.modal-faux-body-width {
+    padding: 1em;
+}
+
+i.fa-times-circle {
+    font-size: 3em;
+    margin-left: .85em; 
+    color: grey;
+    cursor: pointer;
+}

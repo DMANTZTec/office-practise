@@ -1,0 +1,221 @@
+<ng-container *ngIf="phyCompareData">
+
+  <div class="panel">
+    <div class="panel-heading panel-heading-cqs">Physician Comparison</div>
+    <i title="close" data-dismiss="modal" class="fa fa-times-circle pull-right"></i>
+
+    <div class="panel-body fade-out-relative">
+
+      <div class="fade-out-container"></div>
+
+      <ng-container *ngIf="showView == 'singleList'">
+
+        <div class="table-responsive table-scroll-y">
+          <table class="table compare-grid">
+
+            <thead>
+              <tr *ngFor='let phyName of phyNamesData'>
+                <th>
+                  <div class="toggle-highlight">
+                    <p class="type-label-L4">Highlight:</p>
+
+                    <div class="checkbox">
+                      <input type="checkbox" name="toggle-check-red" id="toggle-red" (click)="toggleRed()">
+                      <label for="toggle-check-red"></label>
+                      <i class="fa fa-circle red"></i>
+                    </div>
+                    <!-- .checkbox -->
+
+                    <div class="checkbox">
+                      <input type="checkbox" name="toggle-check-red" id="toggle-yellow" (click)="toggleYellow()">
+                      <label for="toggle-check-yellow"></label>
+                      <i class="fa fa-circle yellow"></i>
+                    </div>
+                    <!-- .checkbox -->
+
+                    <div class="checkbox">
+                      <input type="checkbox" name="toggle-check-green" id="toggle-green" (click)="toggleGreen()">
+                      <label for="toggle-check-green"></label>
+                      <i class="fa fa-circle green"></i>
+                    </div>
+                    <!-- .checkbox -->
+
+                  </div>
+                </th>
+                <th *ngIf="phyName.physician1Label != ''">
+                  <p>{{phyName.physician1Label}}</p>
+                </th>
+                <th *ngIf="phyName.physician2Label != ''">
+                  <p>{{phyName.physician2Label}}</p>
+                </th>
+                <th *ngIf="phyName.physician3Label != ''">
+                  <p>{{phyName.physician3Label}}</p>
+                </th>
+                <th *ngIf="phyName.physician4Label != ''">
+                  <p>{{phyName.physician4Label}}</p>
+                </th>
+                <th *ngIf="phyName.physician5Label != ''">
+                  <p>{{phyName.physician5Label}}</p>
+                </th>
+              </tr>
+            </thead>
+
+            <tbody>
+
+              <tr *ngFor='let phycompareRow of phyCompareData'>
+                <td>{{phycompareRow.metricLabelText}}</td>
+                <td class="text-block" *ngIf="phycompareRow.physician1Name != ''">
+                  <span>{{phycompareRow.physician1 != '' ? phycompareRow.physician1 : ''}}{{phycompareRow.physician1 != '' ? phycompareRow.physician1Uom
+                    : ''}}
+                  </span>
+                  <span>{{phycompareRow.physician1 != '' ? '|' : ''}}</span>
+                  <p [attr.data-color]="phycompareRow.physician1ColorClass" class="{{phycompareRow.physician1ColorClass}}">{{phycompareRow.physician1StandardizedScore}}</p>
+                </td>
+                <td class="text-block" *ngIf="phycompareRow.physician2Name != ''">
+                  <span>{{phycompareRow.physician2 != '' ? phycompareRow.physician2 : ''}}{{phycompareRow.physician2 != '' ? phycompareRow.physician2Uom
+                    : ''}}
+                  </span>
+                  <span>{{phycompareRow.physician2 != '' ? '|' : ''}}</span>
+                  <p [attr.data-color]="phycompareRow.physician2ColorClass" class="{{phycompareRow.physician2ColorClass}}">{{phycompareRow.physician2StandardizedScore}}</p>
+                </td>
+                <td class="text-block" *ngIf="phycompareRow.physician3Name != ''">
+                  <span>{{phycompareRow.physician3 != '' ? phycompareRow.physician3 : ''}}{{phycompareRow.physician3 != '' ? phycompareRow.physician3Uom
+                    : ''}}
+                  </span>
+                  <span>{{phycompareRow.physician3 != '' ? '|' : ''}}</span>
+                  <p [attr.data-color]="phycompareRow.physician3ColorClass" class="{{phycompareRow.physician3ColorClass}}">{{phycompareRow.physician3StandardizedScore}}</p>
+                </td>
+                <td class="text-block" *ngIf="phycompareRow.physician4Name != ''">
+                  <span>{{phycompareRow.physician4 != '' ? phycompareRow.physician4 : ''}}{{phycompareRow.physician4 != '' ? phycompareRow.physician4Uom
+                    : ''}}
+                  </span>
+                  <span>{{phycompareRow.physician4 != '' ? '|' : ''}}</span>
+                  <p [attr.data-color]="phycompareRow.physician4ColorClass" class="{{phycompareRow.physician4ColorClass}}">{{phycompareRow.physician4StandardizedScore}}</p>
+                </td>
+                <td class="text-block" *ngIf="phycompareRow.physician5Name != ''">
+                  <span>{{phycompareRow.physician5 != '' ? phycompareRow.physician5 : ''}}{{phycompareRow.physician5 != '' ? phycompareRow.physician5Uom
+                    : ''}}
+                  </span>
+                  <span>{{phycompareRow.physician5 != '' ? '|' : ''}}</span>
+                  <p [attr.data-color]="phycompareRow.physician5ColorClass" class="{{phycompareRow.physician5ColorClass}}">{{phycompareRow.physician5StandardizedScore}}</p>
+                </td>
+
+              </tr>
+
+            </tbody>
+          </table>
+
+        </div>
+        <!-- .table-responsive -->
+      </ng-container>
+
+      <ng-container *ngIf="showView == 'category'">
+        <div class="table-responsive table-scroll-y">
+          <table class="table compare-grid">
+            <thead>
+              <tr *ngFor='let phyName of phyNamesData'>
+                <th>
+                  <div class="toggle-highlight">
+                    <p class="type-label-L4">Highlight:</p>
+
+                    <div class="checkbox">
+                      <input type="checkbox" name="toggle-check-red" id="toggle-red" (click)="toggleRed()">
+                      <label for="toggle-check-red"></label>
+                      <i class="fa fa-circle red"></i>
+                    </div>
+                    <!-- .checkbox -->
+
+                    <div class="checkbox">
+                      <input type="checkbox" name="toggle-check-red" id="toggle-yellow" (click)="toggleYellow()">
+                      <label for="toggle-check-yellow"></label>
+                      <i class="fa fa-circle yellow"></i>
+                    </div>
+                    <!-- .checkbox -->
+
+                    <div class="checkbox">
+                      <input type="checkbox" name="toggle-check-green" id="toggle-green" (click)="toggleGreen()">
+                      <label for="toggle-check-green"></label>
+                      <i class="fa fa-circle green"></i>
+                    </div>
+                    <!-- .checkbox -->
+
+                  </div>
+                </th>
+                <th *ngIf="phyName.physician1Label != ''">
+                  <p>{{phyName.physician1Label}}</p>
+                </th>
+                <th *ngIf="phyName.physician2Label != ''">
+                  <p>{{phyName.physician2Label}}</p>
+                </th>
+                <th *ngIf="phyName.physician3Label != ''">
+                  <p>{{phyName.physician3Label}}</p>
+                </th>
+                <th *ngIf="phyName.physician4Label != ''">
+                  <p>{{phyName.physician4Label}}</p>
+                </th>
+                <th *ngIf="phyName.physician5Label != ''">
+                  <p>{{phyName.physician5Label}}</p>
+                </th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <ng-container *ngFor='let phyCategoryRow of phyCategoryData'>
+
+                <tr>
+                  <td class="category-name-row">{{phyCategoryRow.metricCategory}}</td>
+                </tr>
+
+                <tr *ngFor='let phycompareRow of getCategoryKPIs(phyCategoryRow.metricCategory)'>
+                  <td>{{phycompareRow.metricLabelText}}</td>
+                  <td class="text-block" *ngIf="phycompareRow.physician1Name != ''">
+                    <span>{{phycompareRow.physician1 != '' ? phycompareRow.physician1 : ''}}{{phycompareRow.physician1 != '' ?
+                      phycompareRow.physician1Uom : ''}}
+                    </span>
+                    <span>{{phycompareRow.physician1 != '' ? '|' : ''}}</span>
+                    <p [attr.data-color]="phycompareRow.physician1ColorClass" class="{{phycompareRow.physician1ColorClass}}">{{phycompareRow.physician1StandardizedScore}}</p>
+                  </td>
+                  <td class="text-block" *ngIf="phycompareRow.physician2Name != ''">
+                    <span>{{phycompareRow.physician2 != '' ? phycompareRow.physician2 : ''}}{{phycompareRow.physician2 != '' ?
+                      phycompareRow.physician2Uom : ''}}
+                    </span>
+                    <span>{{phycompareRow.physician2 != '' ? '|' : ''}}</span>
+                    <p [attr.data-color]="phycompareRow.physician2ColorClass" class="{{phycompareRow.physician2ColorClass}}">{{phycompareRow.physician2StandardizedScore}}</p>
+                  </td>
+                  <td class="text-block" *ngIf="phycompareRow.physician3Name != ''">
+                    <span>{{phycompareRow.physician3 != '' ? phycompareRow.physician3 : ''}}{{phycompareRow.physician3 != '' ?
+                      phycompareRow.physician3Uom : ''}}
+                    </span>
+                    <span>{{phycompareRow.physician3 != '' ? '|' : ''}}</span>
+                    <p [attr.data-color]="phycompareRow.physician3ColorClass" class="{{phycompareRow.physician3ColorClass}}">{{phycompareRow.physician3StandardizedScore}}</p>
+                  </td>
+                  <td class="text-block" *ngIf="phycompareRow.physician4Name != ''">
+                    <span>{{phycompareRow.physician4 != '' ? phycompareRow.physician4 : ''}}{{phycompareRow.physician4 != '' ?
+                      phycompareRow.physician4Uom : ''}}
+                    </span>
+                    <span>{{phycompareRow.physician4 != '' ? '|' : ''}}</span>
+                    <p [attr.data-color]="phycompareRow.physician4ColorClass" class="{{phycompareRow.physician4ColorClass}}">{{phycompareRow.physician4StandardizedScore}}</p>
+                  </td>
+                  <td class="text-block" *ngIf="phycompareRow.physician5Name != ''">
+                    <span>{{phycompareRow.physician5 != '' ? phycompareRow.physician5 : ''}}{{phycompareRow.physician5 != '' ?
+                      phycompareRow.physician5Uom : ''}}
+                    </span>
+                    <span>{{phycompareRow.physician5 != '' ? '|' : ''}}</span>
+                    <p [attr.data-color]="phycompareRow.physician5ColorClass" class="{{phycompareRow.physician5ColorClass}}">{{phycompareRow.physician5StandardizedScore}}</p>
+                  </td>
+
+                </tr>
+
+              </ng-container>
+            </tbody>
+          </table>
+
+        </div>
+        <!-- .table-responsive -->
+      </ng-container>
+
+    </div>
+    <!-- .fade-out-relative -->
+  </div>
+
+</ng-container>

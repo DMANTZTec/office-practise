@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+/* ---------------------------------------------------------------
+ 
+
+/////// !READ-ONLY! - BASE PAGE STYLESHEET Ver. 1.0 - (Alpha) //////
+
+
+--------------------------------------------------------------- */
+
+
+/* -------------------------
+ OVERRIDES / RESETS
+-------------------------- */
+
+body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    position: relative;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    font-size: 100%;
+    margin-top: 5em;
+    background-color: #FCF9F7;
+    color: #005595;
+}
+
+.container-fluid, container {
+    padding: 0;
+}
+
+a {
+    text-decoration: underline;
+}
+
+
+/* ---------------------------------------------
+ PAGE HEADER BAR
+--------------------------------------------- */
+
+
+/* ----- ICONS CONTAINERS ----- */
+
+.icon-block {
+    margin: 1em 0 0 -.75em;
+    padding: 0;
+}
+
+.icon-wrapper {
+    display: inline-block;
+    margin: 0 0 0 1.25em;
+    padding: 0;
+}
+
+.icon-wrapper i {
+    margin: 0 0 0 .5em;
+}
+
+.icon-wrapper:first-of-type > i:first-of-type {
+    margin: 0 0 0 0;
+}
+
+/* ----- TITLE ----- */
+
+.solution-title {
+    font-size: 1.5em;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: .5em .7em 0 0;
+}
+
+/* ----- LOGO(S) ----- */
+
+.fmc-logo, .fkc-logo {
+    width: 107px;
+    height: 31px;
+    fill: #005595;
+    margin: .3em 0 0 0;
+}
+
+
+
+/* ---------------------------------------------
+ MAIN PAGE LAYOUT
+--------------------------------------------- */
+
+.main-contain {
+    margin: 0 auto;
+    max-width: 128em; /* 1280px */
+}
+
+div[id^="level-"] {
+    margin-bottom: 2em;
+}
+
+/* -- resetting nested row's column margin/padding -- */
+
+.row.nested-row {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.row.nested-row > [class^="col-"],
+.row.nested-row > [class*=" col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+
+
+
+
+
+
+
+/* ---------------------------------------------
+ MEDIA QUERIES
+--------------------------------------------- */
+
+
+

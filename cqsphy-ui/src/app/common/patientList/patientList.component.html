@@ -1,0 +1,69 @@
+<h1 class="type-display-H1">Patient List</h1>
+<h2 class="type-display-H2">Showing my patients</h2>
+
+<div class="table-wrapper">
+    <div class="export-list-tab pull-right">
+        <i (click)="ptListExportToExcel()" class="icon fa fa-file-excel-o"></i>
+        <p>Export to Excel</p>
+    </div>
+    <div style="width: 100%;">
+        <p class="legend-label" style="text-align: right;">Incident Patient</p>
+        <img class="legend-icon" src="./assets/_images/icon-incident-patient.svg" style="margin: -3em 0em 0em 92.5em;"
+            title="incident patient">
+    </div>
+    <div class="table-responsive">
+        <table class="table patient-details-list">
+            <thead>
+                <tr class="header-row">
+                    <th></th>
+                    <th>Patient name</th>
+                    <th>MRN</th>
+                    <th>DOB</th>
+                    <th>Clinic</th>
+                    <th>Count of KPI Targets Not Met</th>
+                </tr>
+            </thead>
+            <tbody>
+                <ng-container *ngFor='let patient of patientList'>
+                    <tr (click)="patientClick(patient, $event, this)" class="collapse-row" [attr.id]="'kpi-details-row-'+ patient.MRN"
+                        data-toggle="collapse" [attr.data-target]="'.kpi-details-row-'+ patient.mrn">
+                        <td><i [attr.id]="'icon-detail-toggle-'+ patient.mrn" class="fa fa-plus-square"
+                                [attr.data-target]='show' title="toggle additional row information"></i>
+                        </td>
+                        <td>{{patient.patientName}}
+                            <ng-container *ngIf="patient.isIncident">
+                                <img title="incident patient" src="./assets/_images/icon-incident-patient.svg">
+                            </ng-container>
+                        </td>
+                        <td>{{patient.mrn}}</td>
+                        <td>{{patient.dob}}</td>
+                        <td>{{patient.clinic}}</td>
+                        <td class="red bold">{{patient.kpiNotMetCnt}}</td>
+                    </tr>
+                    <tr [attr.id]="'detail-toggle-'+ patient.mrn" aria-expanded="false" [attr.class]="'kpi-details-row-'+ patient.mrn + ' collapse' ">
+                        <td colspan="10">
+                            <table>
+                                <thead></thead>
+                                <tbody [attr.id]="'body-'+ patient.mrn">
+                                </tbody>
+                            </table>
+                            <a [attr.id]="'btn-'+ patient.mrn" class="btn btn-action" (click)="loadMetricsAgain(patient, $event, this)"
+                                type="button">Load Metrics That Met Target</a>
+                        </td><!-- .hidden-row -->
+
+                    </tr>
+                </ng-container>
+
+                <!-- 
+        <tr class="group-heading">
+          <td colspan="10">Grouped by example</td>
+        </tr> -->
+                <!-- .group-heading -->
+
+            </tbody>
+        </table>
+
+        <!-- <a class="btn btn-action" (click)="ptListExportToExcel()" type="button">Load Metrics That Met Target</a> -->
+    </div><!-- .table-responsive -->
+
+</div><!-- .table-wrapper -->

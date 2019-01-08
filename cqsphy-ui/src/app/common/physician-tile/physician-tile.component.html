@@ -1,0 +1,31 @@
+<div class="panel-heading panel-heading-module panel-heading-module-physician-score">
+  <p class="physician-name has-sibling">{{currentMonthRecord.outputEntityName}}</p>
+  <p class="patient-count-label">{{currentMonthRecord.patientCount}} patients</p>    
+  </div><!-- .panel-heading-module -->
+  <div class="panel-body">
+      <div class="row nested-row">
+          <div class="col-xs-5">
+              <div [attr.class]="'cqs-score-block sprite-panel-score-'+currentMonthRecord.outCqsScore">
+<!--                                                                                <p class="type-label-L2">CQS SCORE</p>-->
+                  <p class="type-display-data-3 data-color-6">{{currentMonthRecord.outCqsScore}}%</p>
+              </div><!-- .cqs-score-block- -->
+          </div>
+          <div class="col-xs-7">
+              <div class="cqs-score-info-block">
+                  <p class="type-label-L3 data-color-6">{{currentMonthRecord.outStandardizedScoreWt}} of {{currentMonthRecord.outPossibleScoreWt}} <br>CQS Points Earned</p>
+                  <p class="type-label-L3">FKC Score: {{currentMonthRecord.fkcScore}} %</p>
+              </div><!-- .cqs-info-block -->
+          </div><!-- .col- -->
+      </div><!-- .row .nested-row -->
+
+      <div class="row nested-row">
+          <div class="col-xs-12">
+              <div>
+                  <!-- <img src="assets/_images/sparkline-placeholder-entity.svg" class="img-responsive"> -->
+                  <!-- 2 line charts not working on the same screen -->
+                  <bi-component-line-chart #lineChart *ngIf="trendData" [data]="trendData" [options]="lineChartOptions" [update]="updateLineChart1"></bi-component-line-chart>
+          
+              </div>
+          </div>
+      </div><!-- .row .nested-row -->
+  </div><!-- .panel-body -->

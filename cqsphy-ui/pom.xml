@@ -1,0 +1,73 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.fmcna.cqsphy</groupId>
+  <artifactId>cqsphy</artifactId>
+  <packaging>war</packaging>
+  <version>1.0</version>
+  
+ <build>
+	<directory>${build_env}</directory>
+	<finalName>${project.artifactId}</finalName>
+     <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>3.2.0</version>
+        <configuration>
+        <webXml>./WEB-INF/web.xml</webXml>
+          <webResources>
+            <resource>
+              <directory>/${build_env}/</directory>
+            </resource>
+          </webResources>
+        </configuration>
+      </plugin>
+       <plugin>
+         <artifactId>maven-clean-plugin</artifactId>
+         <version>2.5</version>
+         <configuration>
+           <filesets>
+             <fileset>
+               <directory>${build_env}</directory>
+               <includes>
+                 <include>*</include>
+               </includes>
+             </fileset>
+           </filesets>
+         </configuration>
+       </plugin>
+        <plugin>
+         <groupId>com.github.eirslett</groupId>
+         <artifactId>frontend-maven-plugin</artifactId>
+         <version>1.6</version>
+		 <configuration>
+			<installDirectory>${env.NODE_PATH}</installDirectory>
+		 </configuration>
+         <executions>
+			<execution>
+             <id>bi-component-library</id>
+             <goals>
+               <goal>npm</goal>
+             </goals>
+             <configuration>
+				<arguments>install . .\bi-component-library-${build_env}.tgz</arguments>
+             </configuration>
+             <phase>generate-resources</phase>
+			</execution>
+			<execution>
+             <id>envBuild</id>
+             <goals>
+               <goal>npm</goal>
+             </goals>
+             <configuration>
+				<arguments>run-script ${build_env}</arguments>
+             </configuration>
+             <phase>generate-resources</phase>
+			</execution>
+          </executions>
+       </plugin>
+     </plugins>
+   </build>
+
+	
+</project>

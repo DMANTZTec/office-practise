@@ -1,0 +1,34 @@
+<!-- //////// NESTED KPIs //////// -->
+<tr>
+    <td class="hidden-row" colspan="10">
+        <div class="well well-wrapper">
+            <div (click)="kpiClick(patientMetricRow, $event, this)" class="row nested-KPI-block" data-toggle="collapse" [attr.id]="'.nested-KPI-collapse-' + MRN + '-' + patientMetricRow.metricCd"
+                [attr.data-target]="'#nested-KPI-collapse-' + MRN  + '-' + patientMetricRow.metricCd"
+                title="Toggle KPI details">
+                <div class="col-xs-12">
+                    <i [attr.id]="'kpi-toggle-icon-'+  MRN  + '-' + patientMetricRow.metricCd"
+                        class="icon fa fa-chevron-right fa-2x" type="button"></i>
+                    <h3>{{patientMetricRow.metricName}}</h3>
+                    <h4>{{patientMetricRow.metricDefinition}} </h4>
+                    <i class="fa fa-circle pull-right red"></i>
+                </div><!-- .col- -->
+            </div><!-- .row  -->
+
+            <div class="row collapse" [attr.id]="'nested-KPI-collapse-'+  MRN  + '-' + patientMetricRow.metricCd">
+                <div class="col-xs-12">
+                    <div class="well">
+
+                        <div class="row">
+                            <app-patientKPIInfoLegend [patientMetricRow]='patientMetricRow'>
+                            </app-patientKPIInfoLegend>
+                            <app-patientKPInfoDetails [patientMetricFromDB]='patientMetricFromDB' [patientMetricList]='patientMetricList'
+                                [patientMetricRow]='patientMetricRow'>
+                            </app-patientKPInfoDetails>
+
+                        </div>
+                    </div><!-- .well -->
+                </div><!-- .col- -->
+            </div><!-- .row collapse -->
+        </div><!-- .well-wrapper -->
+    </td>
+</tr>

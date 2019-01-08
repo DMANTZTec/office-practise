@@ -1,0 +1,34 @@
+<!-- //////////////// TAB 1 CONTENT //////////////// -->
+<div class="tab-pane active" id="patient-summary-tab">
+    <!-- <h1 class="type-display-H1">Showing my patients</h1> -->
+    <div class="census-wrapper pull-right">
+        <p class="type-display-data-4">{{entityCensus}}</p>
+        <p class="type-label-L3">{{modality}} Patients</p>
+    </div>
+    <!-- .census-wrapper -->
+
+    <div class="row">
+        <div class="col-xs-12">
+
+            <app-summary *ngIf="patientSummaryData" [trendData]='patientSummaryData' [update]="updateChildren" [moduleName]="'PhysicianSummary'"> </app-summary>
+
+            <!-- SENTENCE BUILDER -->
+            <div class="row nested-row">
+                <div class="col-xs-12">
+                    <bi-component-sentence-builder [sentence-builder-config]="sbConfig" ></bi-component-sentence-builder>   
+                    <!-- .sentence-builder-wrapper -->
+                </div>
+                <!-- .col- -->
+            </div>
+            <!-- NESTED .row -->
+        </div>
+        <!-- .col- -->
+    </div>
+    <!-- .row -->
+    <!-- <router-outlet></router-outlet> -->
+    <app-kpi-category *ngIf="showView == 1" [showView]="showView" [modality]="modality" [sort]="sort"> </app-kpi-category>
+
+    <app-kpi-single-list *ngIf="showView == 0" [showView]="showView" [modality]="modality" [sort]="sort" [update]="updateChildren"> </app-kpi-single-list>
+
+</div>
+<!-- .tab-pane -->

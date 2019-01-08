@@ -1,0 +1,39 @@
+<h1 class="type-display-H1">
+    Showing all physicians within my group</h1>
+<div class="row group-summary-row">
+    <div class="col-xs-10 col-sm-5">
+        <p class="type-display-H4">Group Name 1, City, State Zip</p>
+    </div>
+    <!-- .col- -->
+
+    <div class="col-xs-12 col-sm-5">
+        <!-- NESTED .row -->
+        <div class="row nested-row">
+            <div class="col-xs-2">
+                <p class="type-display-data-4 data-color-6">77%</p>
+            </div>
+            <!-- .col- -->
+            <div class="col-xs-1">
+                <div class="cqs-points-toggle-row sprite-toggle-row-points-77">
+                </div>
+                <!-- .cqs-points-toggle-row -->
+            </div>
+            <!-- .col- -->
+            <div class="col-xs-9">
+                <p class="type-label-L2 data-color-6">23 of 30 CQS Points Earned</p>
+            </div>
+            <!-- .col- -->
+        </div>
+        <!-- .row -->
+    </div>
+    <!-- .col- -->
+
+    <div class="col-xs-12 col-sm-2">
+        <a href="#/group-page?pracGrpId={{grpPracId}}&pracGrpLevel={{entityLvl}}&modality={{modality}}&dataAsOfDate={{rptDt}}" target="1"
+        type="button" class="btn btn-action pull-right">Go to Group Page</a>
+    </div>
+    <!-- .col- -->
+</div>
+<!-- .row -->
+
+<app-physician-single-list [modality]="modality" [sort]="sort"> </app-physician-single-list>

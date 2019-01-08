@@ -1,0 +1,35 @@
+[
+  {
+	"metricCategoryOrder": "1",
+    "metricCategory": "Clinical Metrics",
+	"description": "23 of 30 CQS Points Earned",
+	"uiPercentile": "77",
+	"entityStandardizedScoreWt": "23",
+	"entityPossibleScoreWt": "30",
+	"redCount": "4",
+	"yellowCount": "2",
+	"greenCount":"1"
+  },
+  {
+	"metricCategoryOrder": "2",
+    "metricCategory": "QIP",
+	"description": "35 of 40 CQS Points Earned",
+	"uiPercentile": "87",
+	"entityStandardizedScoreWt": "35",
+	"entityPossibleScoreWt": "40",
+	"redCount": "0",
+	"yellowCount": "2",
+	"greenCount":"5"
+  },
+  {
+	"metricCategoryOrder": "3",
+    "metricCategory": "Treatment Processes",
+	"description": "22 of 30 CQS Points Earned",
+	"uiPercentile": "73",
+	"entityStandardizedScoreWt": "22",
+	"entityPossibleScoreWt": "30",
+	"redCount": "1",
+	"yellowCount": "4",
+	"greenCount":"1"
+  }
+]

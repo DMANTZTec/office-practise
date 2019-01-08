@@ -1,0 +1,251 @@
+@charset "UTF-8";
+
+
+/* --------------------------------------------------
+                
+                BI Framework CSS
+
+    !!!!!!!!!!!!!  -------------   !!!!!!!!!!!!!
+    !!!!!!!!!!!!!  READ ONLY  !!!!!!!!!!!!!  
+    !!!!!!!!!!!!!  -------------   !!!!!!!!!!!!!
+
+
+----------------------------------------------------- */
+
+
+/* ------------- HEADER BAR ------------- */
+
+.header-fixed-top {
+    width: 100%;
+    position: fixed;
+    top: 5px;
+    z-index: 100;
+    height: 5.5em;
+    padding: .8em 2em .7em 1.8em;
+    background-color: #fff;
+    border-bottom: 2px solid #e2e5eb;
+}
+
+.brand-bar {
+    display: block;
+    position: fixed;
+    top: 0;
+    z-index: 101;
+    width: 100%;
+    height: 15px;
+    margin: -.5em 0 0 0;
+}
+
+[class^="logo-"] {
+/* ---- Will vary by solution ---- */
+    width: 38.5em; 
+    height: 5em;
+    margin-top: -.5em;
+}
+
+
+/* ------------- SEARCH ------------- */
+
+.search-wrapper {
+    display: inline-block;
+    max-width: 33em;
+    margin: -.3em 0 0 1em;
+}
+
+.search-wrapper button {
+    background-color: #66A305;
+    color: #fff;
+}
+
+.search-wrapper button:hover {
+    cursor: default;
+    color: #fff;
+}
+
+
+/* ------------- SIDEBAR POSITIONING ------------- */
+
+#outer-wrapper {
+    width: 100%;
+    position: relative;
+    padding-left: 0;
+    transition: all 0.7s ease;
+}
+
+#page-wrapper {
+    width: 100%;
+    position: absolute;
+    overflow-x: hidden;
+}
+
+
+/* ------------- SIDEBAR TOGGLING ------------- */
+
+#sidebar-toggle {
+    display: inline-block;
+    width: 7em;
+    margin: -1.6em 1em 0 -1.3em;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-left: 0;
+}
+
+#sidebar-wrapper {
+    z-index: 100;
+    position: fixed;
+    left: 28em;
+    width: 0;
+    height: 100%;
+    margin-left: -28em;
+    margin-top: -5em;
+    background-color: #4d4d4d;
+    overflow-y: auto;
+    transition: all 0.7s ease;
+}
+
+#outer-wrapper.toggled {
+    padding-left: 28em;
+}
+
+#outer-wrapper.toggled #sidebar-wrapper {
+    width: 28em;
+}
+
+#outer-wrapper.toggled #page-wrapper {
+    position: absolute;
+    margin-right: -28em;
+}
+
+
+/* ------------- SIDEBAR PANEL ------------- */
+
+.sidebar {
+    width: 28em;
+    margin: 0;
+    padding: 0 0 4em 0;
+}
+
+[class^="sidebar-"][class$="-container"] {
+    padding: 2em 0;
+    border-bottom: 1px solid rgba(179,179,179,.25);
+}
+
+
+/* ------------- SIDEBAR USERNAME ------------- */
+
+.sidebar-username-container {
+    width: 100%;
+    padding: 2em 0 1em 2em !important;
+    color: #f7f7f7;
+    border-bottom: none !important;
+}
+
+.sidebar-username-container > p {
+    font-size: 1.2em;
+    font-weight: 400;
+    letter-spacing: .02em;
+}
+
+.sidebar-username-container > p i {
+    font-size: 1.6em;
+    margin: 0 .5em 0 .25em;
+}
+
+
+/* ------------- SIDEBAR LINKS ------------- */
+
+.sidebar-links-container {
+    padding-top: 0 !important;
+}
+
+.sidebar-links-container p.sidebar-btn-block {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin: 0;
+    padding: .4em .5em .9em 1.5em;
+    border-bottom: 1px solid #4d4d4d;
+    background-color: #448db9;
+    color: #f7f7f7;
+}
+
+.sidebar-links-container p.sidebar-btn-block:hover {
+    cursor: pointer;
+    background-color: #5caadd;
+}
+
+.sidebar-links-container i {
+    font-size: 1.4em;
+    margin: 0 .5em 0 0;
+    padding: .25em 0 0 0;
+}
+
+.sidebar-links-container p.sidebar-btn-block:first-of-type {
+    border-top: 1px solid #383c43;
+}
+
+.sidebar-links-container p.sidebar-section-name {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin: 0 0 1em 0;
+    padding: 1em .5em 0 1.5em;
+    color: #f7f7f7;
+}
+
+.sidebar-links-container p.sidebar-section-name i {
+    margin: 0 .35em 0 .25em;
+}
+
+.sidebar-links-container ul.application-links {
+    list-style-type: none;
+    list-style-position: inside;
+    margin: 0;
+    padding: 0 2em 0 0;
+}
+
+.sidebar-links-container ul.application-links li {
+    list-style-type: none;
+    list-style-position: inside;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar-links-container ul.application-links li a {
+    display: block;
+    font-size: 1.25em;
+    font-weight: 400;
+    text-decoration: underline;
+    margin: .75em 0 .75em 2em;
+    padding: 0 0 0 1em;
+    color: #f7f7f7;
+}
+
+.sidebar-links-container ul.application-links li a:hover {
+    text-decoration: none;
+}
+
+
+/* ------------- BREADCRUMBS ------------- */
+
+.breadcrumbs {
+    margin: 2.8em 0 0 12em;
+    color: #448db9;
+}
+
+.breadcrumbs a {
+    display: inline-block;
+    font-size: 1.15em;
+    font-weight: 600;
+    letter-spacing: .035em;
+    margin: 0 .5em .5em .5em;
+}
+
+.breadcrumbs a:hover {
+    text-decoration: none;
+    color: #005595;
+}
+
+.breadcrumbs a:last-of-type {
+    cursor: default;
+    text-decoration: none;
+    color: #005595;
+}

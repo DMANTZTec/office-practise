@@ -1,0 +1,58 @@
+<div class="row nested-row">
+  <div class="col-xs-12 col-sm-6">
+      <!-- NESTED .row -->
+      <div class="row nested-row">
+          <div class="col-xs-12 col-sm-5">
+              <div [attr.class]="'cqs-score-summary-block sprite-summary-score-'+currentMonthData.entityCqsScores">
+                  <p class="type-display-data-2">{{currentMonthData.entityCqsScores}}%</p>
+              </div>
+              <!-- .cqs-score-summary-block -->
+          </div>
+          <!-- .col- -->
+          <div class="col-xs-12 col-sm-7">
+              <div class="score-info-block">
+                  <div class="row nested-row">
+                      <div class="col-xs-12">
+                          <div class="">
+                              <p class="type-display-data-4 data-color-6">{{currentMonthData.entityStandardizedScoreWt}} of {{currentMonthData.entityPossibleScoreWt}}</p>
+                              <p class="type-label-L3 data-color-6">CQS Points Earned</p>
+                          </div>
+                      </div>
+                      <!-- .col- -->
+                  </div>
+                  <!-- NESTED .row -->
+                  <div class="row nested-row">
+                      <div class="col-xs-12">
+                          <p class="type-display-data-5">FKC Score: {{currentMonthData.fkcScore}}%</p>
+                      </div>
+                      <!-- .col- -->
+                  </div>
+                  <!-- NESTED .row -->
+              </div>
+          </div>
+          <!-- .col- -->
+      </div>
+      <!-- NESTED .row -->
+  </div>
+  <!-- .col- -->
+
+  <div class="col-xs-12 col-sm-6">
+      <div class="row nested-row">
+          <div class="col-xs-12">
+              <div class="score-over-time-wrapper">
+                  <p *ngIf="moduleName == 'PhysicianSummary'" class="type-display-H3">Your Score Over Time</p>
+                  <p *ngIf="moduleName == 'GroupSummary'" class="type-display-H3">Group Score Over Time</p>
+                  <!-- <img src="./assets/_images/level-1-sparkline-placeholder.svg" class="img-responsive score-sparkline-placeholder"> -->
+
+                  <bi-component-line-chart #lineChart *ngIf="trendData" [data]="trendData" [options]="lineChartOptions" [update]="updateLineChart"></bi-component-line-chart>
+
+              </div>
+              <!-- .score-over-time-wrapper -->
+          </div>
+          <!-- .col- -->
+      </div>
+      <!-- NESTED .row -->
+  </div>
+  <!-- .col- -->
+</div>
+<!-- .row -->

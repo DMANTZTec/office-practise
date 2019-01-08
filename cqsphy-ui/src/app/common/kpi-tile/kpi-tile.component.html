@@ -1,0 +1,100 @@
+<ng-container *ngIf="currentMonthRecord">
+  <!-- <div [attr.class]="'panel-heading panel-heading-module panel-heading-module-'+currentMonthRecord.metricColorClass"> -->
+  <div class="panel-heading panel-heading-module panel-heading-module-red">
+    <div class="row nested-row">
+      <div class="col-xs-12">
+        <p class="kpi-name" [ngClass]="{'has-sibling': currentMonthRecord.metricTgtShortDesc !=''}">{{currentMonthRecord.metricLabelTxt}} </p>
+        <p *ngIf="currentMonthRecord.metricTgtShortDesc !='' " class="kpi-definition-label">{{currentMonthRecord.metricTgtShortDesc}}</p>
+      </div>
+    </div>
+    <!-- .row .nested-row -->
+  </div>
+  <!-- .panel-heading-module -->
+
+  <div class="panel-body">
+    <div class="row">
+      <div class="col-xs-8">
+        <div class="percent-met-wrapper" [ngClass]="{'inverted': currentMonthRecord.isUpGoodInd ==0}">
+          <p *ngIf="currentMonthRecord.isUpGoodInd ==0" class="lower-is-better pull-right">Lower {{currentMonthRecord.uom}} is better</p>
+          <!-- <p [attr.class]="currentMonthRecord.metricColorClass"> -->
+              <p class="red">{{currentMonthRecord.entityMetricValue}}{{currentMonthRecord.uom}}</p>
+          <p>{{currentMonthRecord.uiKpiLabel}}</p>
+          <p>{{currentMonthRecord.uiKpiTrendLabel}}</p>
+          <!-- <p *ngIf="currentMonthRecord.isUpGoodInd ==0">You're trending upward</p> -->
+          <p class="tile-fkc-score pull-right">FKC ({{currentMonthTrendRecord.fkcScore}}{{currentMonthTrendRecord.uom}}) </p>
+
+          <!-- <div class="chart-placeholder">
+            <img class="img-responsive" src="assets/_images/chart-placeholder.svg">
+          </div> -->
+          <!-- .chart-placeholder -->
+          <div class="chart-placeholder">
+            <bi-component-line-chart #lineChart *ngIf="trendData" [data]="trendData" [options]="lineChartOptions" [update]="updateLineChart"></bi-component-line-chart>
+          </div>
+
+        </div>
+        <!-- .percent-met-wrapper -->
+
+        <div class="cqs-points-wrapper">
+          <!-- WEIGHTS NOT INCLUDED -->
+          <!-- <div *ngIf="currentMonthRecord.weights ==2" class="points-weight-container double-points-kpi"> -->
+            <!-- STICKERS WILL BE THIS DIV'S BACKGROUND IMAGE SPRITE -->
+          <!-- </div> -->
+           <!-- WEIGHTS NOT INCLUDED -->
+          <!-- <div *ngIf="currentMonthRecord.weights ==0.5" class="points-weight-container half-points-kpi"> -->
+            <!-- STICKERS WILL BE THIS DIV'S BACKGROUND IMAGE SPRITE -->
+          <!-- </div> -->
+          <!-- <p [attr.class]="currentMonthRecord.metricColorClass"> -->
+              <p class="red">{{currentMonthRecord.entityStandardizedScoreWt}}</p>
+          <p>CQS points earned</p>
+          <!-- WEIGHTS NOT INCLUDED -->
+          <!-- <p *ngIf="currentMonthRecord.weights !=1">
+            {{currentMonthRecord.entityStandardizedScoreWt}} added to your total score -->
+            <!-- DOUBLE OR HALF POINT MESSAGE APPENDED HERE -->
+          <!-- </p> -->
+        </div>
+        <!-- .cqs-points-wrapper -->
+      </div>
+      <div class="col-xs-4">
+        <div class="thresholds-container">
+          <p>KPI
+            <br> Thresholds</p>
+          <p *ngIf="currentMonthRecord.isUpGoodInd ==1">{{currentMonthRecord.uom == '%' ? 'Goal' : 'Rate'}}</p>
+          <p *ngIf="currentMonthRecord.isUpGoodInd ==0">{{currentMonthRecord.uom == '%' ? '% Met' : 'Rate'}}</p>
+          <p>Points</p>
+
+          <table class="threshold-percent" [ngClass]="{'inverted': currentMonthRecord.isUpGoodInd ==0}">
+            <tr>
+              <td>{{currentMonthRecord.kpiHigh}}{{currentMonthRecord.uom}}
+                <span class="grey-tick">&ndash;</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="green">{{currentMonthRecord.upperLimitKpiRate}}{{currentMonthRecord.uom}}
+                <span class="grey-tick">&ndash;</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="yellow">{{currentMonthRecord.lowerLimitKpiRate}}{{currentMonthRecord.uom}}
+                <span class="grey-tick">&ndash;</span>
+              </td>
+            </tr>
+            <tr>
+              <td>{{currentMonthRecord.kpiLow}}{{currentMonthRecord.uom}}
+                <span class="grey-tick">&ndash;</span>
+              </td>
+            </tr>
+          </table>
+          <div *ngIf="currentMonthRecord.isUpGoodInd ==1" [attr.class]="'thresholds-chart points-'+currentMonthRecord.entityStandardizedScoreWt">
+            <!-- GUAGE WILL BE THIS DIV'S BACKGROUND IMAGE SPRITE -->
+          </div>
+          <div *ngIf="currentMonthRecord.isUpGoodInd ==0" [attr.class]="'thresholds-chart inverted points-'+currentMonthRecord.entityStandardizedScoreWt">
+            <!-- GUAGE WILL BE THIS DIV'S BACKGROUND IMAGE SPRITE -->
+          </div>
+        </div>
+      </div>
+      <!-- .col- -->
+    </div>
+    <!-- .row -->
+  </div>
+  <!-- .panel-body -->
+</ng-container>

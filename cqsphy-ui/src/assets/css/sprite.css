@@ -1,0 +1,2161 @@
+@charset "UTF-8";
+
+
+/* --------------------------------------
+         
+                SPRITES
+
+---------------------------------------- */
+
+/* ---- CQS SCORE SUMMARY SPRITE ---- */
+
+.cqs-score-summary-block {
+    width: 22em;
+    height: 22em;
+}
+
+.cqs-score-summary-block.sprite-summary-score-0 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -32px -23px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-1 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -32px -263px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-2 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -32px -506px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-3 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -32px -749px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-4 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -32px -993px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-5 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -33px -1238px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-6 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -32px -1480px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-7 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -32px -1722px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-8 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -33px -1965px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-9 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -32px -2208px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-10 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -274px -23px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-11 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -274px -263px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-12 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -274px -506px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-13 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -274px -749px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-14 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -274px -992px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-15 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -274px -1236px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-16 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -274px -1479px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-17 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -274px -1722px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-18 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -274px -1965px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-19 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -274px -2208px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-20 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -518px -24px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-21 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -518px -263px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-22 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -518px -506px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-23 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -518px -749px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-24 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -518px -992px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-25 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -518px -1235px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-26 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -518px -1479px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-27 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -518px -1722px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-28 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -518px -1965px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-29 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -518px -2209px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-30 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -760px -23px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-31 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -760px -263px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-32 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -760px -506px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-33 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -760px -749px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-34 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -760px -993px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-35 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -760px -1237px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-36 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -760px -1480px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-37 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -760px -1723px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-38 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -760px -1966px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-39 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -760px -2209px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-40 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -1002px -23px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-41 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -1002px -263px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-42 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -1002px -506px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-43 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -1002px -749px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-44 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -1002px -993px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-45 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -1002px -1237px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-46 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -1002px -1480px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-47 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -1002px -1723px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-48 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -1002px -1966px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-49 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -1002px -2209px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-50 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -1244px -24px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-51 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -1244px -263px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-52 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -1244px -506px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-53 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -1244px -750px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-54 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -1244px -993px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-55 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -1244px -1237px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-56 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -1244px -1480px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-57 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -1244px -1724px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-58 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -1244px -1966px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-59 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -1244px -2209px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-60 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -1486px -24px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-61 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -1486px -264px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-62 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -1486px -507px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-63 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -1486px -750px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-64 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -1486px -993px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-65 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -1486px -1237px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-66 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -1486px -1480px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-67 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -1486px -1723px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-68 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -1486px -1966px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-69 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -1486px -2208px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-70 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -1729px -24px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-71 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -1729px -264px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-72 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -1729px -507px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-73 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -1729px -750px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-74 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -1729px -993px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-75 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -1729px -1237px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-76 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -1729px -1480px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-77 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -1729px -1723px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-78 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -1729px -1966px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-79 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -1729px -2209px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-80 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -1971px -24px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-81 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -1972px -264px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-82 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -1971px -507px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-83 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -1971px -750px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-84 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -1970px -993px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-85 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -1970px -1237px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-86 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -1970px -1480px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-87 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -1970px -1723px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-88 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -1970px -1966px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-89 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -1970px -2209px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-90 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -2214px -23px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-91 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -2214px -264px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-92 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -2214px -507px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-93 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -2214px -750px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-94 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -2214px -993px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-95 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -2214px -1237px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-96 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -2214px -1480px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-97 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -2214px -1723px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-98 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -2214px -1966px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-99 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -2214px -2209px;
+}
+
+.cqs-score-summary-block.sprite-summary-score-100 {
+    background: url("../_images/sprite-summary-score.svg") no-repeat;
+    background-size: 270em;
+    background-position: -2457px -22px;
+}
+
+
+
+/* ---- CQS POINTS PANEL SPRITE ---- */
+
+div[class^="cqs-points-block-"] {
+    width: 16em;
+    height: 15em;
+}
+
+div[class^="cqs-points-block-"].sprite-panel-points-0 {
+    background: url("../_images/sprite-panel-points.svg") no-repeat;
+    background-size: cover;
+    background-position: 0 -7px;
+}
+
+div[class^="cqs-points-block-"].sprite-panel-points-1 {
+    background: url("../_images/sprite-panel-points.svg") no-repeat;
+    background-size: cover;
+    background-position: 0 -160px;
+}
+
+div[class^="cqs-points-block-"].sprite-panel-points-2 {
+    background: url("../_images/sprite-panel-points.svg") no-repeat;
+    background-size: cover;
+    background-position: 0 -314px;
+}
+
+div[class^="cqs-points-block-"].sprite-panel-points-3 {
+    background: url("../_images/sprite-panel-points.svg") no-repeat;
+    background-size: cover;
+    background-position: 0 -468px;
+}
+
+div[class^="cqs-points-block-"].sprite-panel-points-4 {
+    background: url("../_images/sprite-panel-points.svg") no-repeat;
+    background-size: cover;
+    background-position: 0 -622px;
+}
+
+div[class^="cqs-points-block-"].sprite-panel-points-5 {
+    background: url("../_images/sprite-panel-points.svg") no-repeat;
+    background-size: cover;
+    background-position: 0 -780px;
+}
+
+div[class^="cqs-points-block-"].sprite-panel-points-6 {
+    background: url("../_images/sprite-panel-points.svg") no-repeat;
+    background-size: cover;
+    background-position: 0 -940px;
+}
+
+div[class^="cqs-points-block-"].sprite-panel-points-7 {
+    background: url("../_images/sprite-panel-points.svg") no-repeat;
+    background-size: cover;
+    background-position: 0 -1097px;
+}
+
+div[class^="cqs-points-block-"].sprite-panel-points-8 {
+    background: url("../_images/sprite-panel-points.svg") no-repeat;
+    background-size: cover;
+    background-position: 0 -1253px;
+}
+
+div[class^="cqs-points-block-"].sprite-panel-points-9 {
+    background: url("../_images/sprite-panel-points.svg") no-repeat;
+    background-size: cover;
+    background-position: 0 -1410px;
+}
+
+div[class^="cqs-points-block-"].sprite-panel-points-10 {
+    background: url("../_images/sprite-panel-points.svg") no-repeat;
+    background-size: cover;
+    background-position: 0 -1572px;
+}
+
+
+
+/* ---- CAHPS TOP BOX BLOCK SPRITE ---- */
+
+.CAHPS-top-box-block div[class^="col-xs-4 col-xs-offset-1 sprite-"] {
+    padding: .25em;
+}
+
+.CAHPS-top-box-block .sprite-CAHPS-points-0 {
+    background: url("../_images/sprite-CAHPS-points.svg") no-repeat;
+    background-size: 5.7em;
+    background-position: 0 0;
+}
+
+.CAHPS-top-box-block .sprite-CAHPS-points-1 {
+    background: url("../_images/sprite-CAHPS-points.svg") no-repeat;
+    background-size: 5.7em;
+    background-position: 0 -53px;
+}
+
+.CAHPS-top-box-block .sprite-CAHPS-points-2 {
+    background: url("../_images/sprite-CAHPS-points.svg") no-repeat;
+    background-size: 5.7em;
+    background-position: 0 -114px;
+}
+
+.CAHPS-top-box-block .sprite-CAHPS-points-3 {
+    background: url("../_images/sprite-CAHPS-points.svg") no-repeat;
+    background-size: 5.7em;
+    background-position: 0 -172px;
+}
+
+.CAHPS-top-box-block .sprite-CAHPS-points-4 {
+    background: url("../_images/sprite-CAHPS-points.svg") no-repeat;
+    background-size: 5.7em;
+    background-position: 0 -228px;
+}
+
+.CAHPS-top-box-block .sprite-CAHPS-points-5 {
+    background: url("../_images/sprite-CAHPS-points.svg") no-repeat;
+    background-size: 5.7em;
+    background-position: 0 -284px;
+}
+
+.CAHPS-top-box-block .sprite-CAHPS-points-6 {
+    background: url("../_images/sprite-CAHPS-points.svg") no-repeat;
+    background-size: 5.7em;
+    background-position: 0 -340px;
+}
+
+.CAHPS-top-box-block .sprite-CAHPS-points-7 {
+    background: url("../_images/sprite-CAHPS-points.svg") no-repeat;
+    background-size: 5.7em;
+    background-position: 0 -397px;
+}
+
+.CAHPS-top-box-block .sprite-CAHPS-points-8 {
+    background: url("../_images/sprite-CAHPS-points.svg") no-repeat;
+    background-size: 5.7em;
+    background-position: 0 -453px;
+}
+
+.CAHPS-top-box-block .sprite-CAHPS-points-9 {
+    background: url("../_images/sprite-CAHPS-points.svg") no-repeat;
+    background-size: 5.7em;
+    background-position: 0 -511px;
+}
+
+.CAHPS-top-box-block .sprite-CAHPS-points-10 {
+    background: url("../_images/sprite-CAHPS-points.svg") no-repeat;
+    background-size: 5.7em;
+    background-position: 0 -569px;
+}
+
+
+/* ---- CQS POINTS TOGGLE ROW SPRITE ---- */
+
+div.cqs-points-toggle-row {
+    width: 4em;
+    height: 4em;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-0 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -7px -6px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-1 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -7px -48px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-2 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -7px -91px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-3 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -7px -134px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-4 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -7px -177px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-5 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -7px -220px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-6 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -7px -263px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-7 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -7px -306px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-8 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -7px -349px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-9 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -7px -392px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-10 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -52px -6px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-11 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -52px -49px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-12 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -52px -92px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-13 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -52px -135px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-14 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -52px -177px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-15 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -52px -220px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-16 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -52px -263px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-17 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -52px -306px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-18 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -52px -349px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-19 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -52px -392px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-20 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -96px -6px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-21 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -96px -49px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-22 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -96px -92px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-23 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -96px -135px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-24 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -96px -178px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-25 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -96px -220px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-26 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -96px -263px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-27 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -96px -306px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-28 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -96px -349px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-29 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -96px -392px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-30 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -141px -6px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-31 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -141px -49px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-32 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -141px -92px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-33 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -141px -135px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-34 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -141px -178px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-35 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -141px -220px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-36 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -141px -263px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-37 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -141px -306px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-38 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -141px -349px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-39 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -141px -392px;
+}
+
+
+.cqs-points-toggle-row.sprite-toggle-row-points-40 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -186px -6px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-41 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -186px -49px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-42 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -186px -92px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-43 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -186px -135px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-44 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -186px -178px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-45 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -186px -220px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-46 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -186px -263px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-47 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -186px -306px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-48 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -186px -349px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-49 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -186px -392px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-50 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -230px -6px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-51 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -230px -49px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-52 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -230px -92px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-53 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -230px -136px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-54 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -230px -178px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-55 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -230px -221px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-56 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -229px -263px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-57 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -230px -307px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-58 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -230px -349px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-59 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -230px -392px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-60 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -275px -6px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-61 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -275px -49px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-62 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -275px -92px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-63 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -275px -135px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-64 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -275px -178px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-65 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -275px -220px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-66 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -275px -263px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-67 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -274px -306px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-68 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -274px -349px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-69 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -274px -392px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-70 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -319px -6px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-71 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -319px -49px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-72 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -318px -92px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-73 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -318px -135px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-74 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -318px -178px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-75 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -318px -221px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-76 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -318px -263px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-77 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -318px -306px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-78 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -318px -349px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-79 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -318px -392px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-80 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -363px -6px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-81 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -363px -49px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-82 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -363px -92px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-83 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -363px -135px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-84 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -363px -178px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-85 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -363px -221px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-86 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -362px -263px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-87 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -363px -306px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-88 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -363px -349px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-89 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -363px -392px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-90 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -408px -6px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-91 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -408px -49px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-92 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -407px -92px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-93 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -407px -135px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-94 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -407px -178px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-95 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -407px -220px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-96 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -408px -263px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-97 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -408px -306px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-98 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -407px -349px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-99 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -408px -391px;
+}
+
+.cqs-points-toggle-row.sprite-toggle-row-points-100 {
+    background: url("../_images/sprite-toggle-row-points.svg") no-repeat;
+    background-size: 50em;
+    background-position: -451px -6px;
+}
+
+
+/* ---- CQS SCORE BLOCK - PANEL SPRITE ---- */
+
+div.cqs-score-block {
+    width: 16em;
+    height: 16em;
+}
+
+.cqs-score-block.sprite-panel-score-0 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -15px -15px;
+}
+
+.cqs-score-block.sprite-panel-score-1 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -15px -170px;
+}
+
+.cqs-score-block.sprite-panel-score-2 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -15px -327px;
+}
+
+.cqs-score-block.sprite-panel-score-3 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -15px -484px;
+}
+
+.cqs-score-block.sprite-panel-score-4 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -15px -641px;
+}
+
+.cqs-score-block.sprite-panel-score-5 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -15px -799px;
+}
+
+.cqs-score-block.sprite-panel-score-6 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -15px -955px;
+}
+
+.cqs-score-block.sprite-panel-score-7 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -15px -1112px;
+}
+
+.cqs-score-block.sprite-panel-score-8 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -15px -1269px;
+}
+
+.cqs-score-block.sprite-panel-score-9 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -15px -1427px;
+}
+
+.cqs-score-block.sprite-panel-score-10 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -172px -15px;
+}
+
+.cqs-score-block.sprite-panel-score-11 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -172px -170px;
+}
+
+.cqs-score-block.sprite-panel-score-12 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -172px -327px;
+}
+
+.cqs-score-block.sprite-panel-score-13 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -172px -484px;
+}
+
+.cqs-score-block.sprite-panel-score-14 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -172px -641px;
+}
+
+.cqs-score-block.sprite-panel-score-15 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -172px -799px;
+}
+
+.cqs-score-block.sprite-panel-score-16 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -172px -955px;
+}
+
+.cqs-score-block.sprite-panel-score-17 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -172px -1112px;
+}
+
+.cqs-score-block.sprite-panel-score-18 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -172px -1269px;
+}
+
+.cqs-score-block.sprite-panel-score-19 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -172px -1427px;
+}
+
+.cqs-score-block.sprite-panel-score-20 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -329px -15px;
+}
+
+.cqs-score-block.sprite-panel-score-21 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -329px -170px;
+}
+
+.cqs-score-block.sprite-panel-score-22 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -329px -327px;
+}
+
+.cqs-score-block.sprite-panel-score-23 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -329px -484px;
+}
+
+.cqs-score-block.sprite-panel-score-24 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -329px -641px;
+}
+
+.cqs-score-block.sprite-panel-score-25 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -329px -799px;
+}
+
+.cqs-score-block.sprite-panel-score-26 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -329px -955px;
+}
+
+.cqs-score-block.sprite-panel-score-27 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -329px -1112px;
+}
+
+.cqs-score-block.sprite-panel-score-28 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -329px -1269px;
+}
+
+.cqs-score-block.sprite-panel-score-29 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -329px -1427px;
+}
+
+.cqs-score-block.sprite-panel-score-30 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -486px -15px;
+}
+
+.cqs-score-block.sprite-panel-score-31 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -486px -170px;
+}
+
+.cqs-score-block.sprite-panel-score-32 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -486px -327px;
+}
+
+.cqs-score-block.sprite-panel-score-33 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -486px -484px;
+}
+
+.cqs-score-block.sprite-panel-score-34 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -486px -641px;
+}
+
+.cqs-score-block.sprite-panel-score-35 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -486px -799px;
+}
+
+.cqs-score-block.sprite-panel-score-36 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -486px -955px;
+}
+
+.cqs-score-block.sprite-panel-score-37 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -486px -1112px;
+}
+
+.cqs-score-block.sprite-panel-score-38 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -486px -1269px;
+}
+
+.cqs-score-block.sprite-panel-score-39 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -486px -1427px;
+}
+
+.cqs-score-block.sprite-panel-score-40 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -643px -15px;
+}
+
+.cqs-score-block.sprite-panel-score-41 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -643px -170px;
+}
+
+.cqs-score-block.sprite-panel-score-42 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -643px -327px;
+}
+
+.cqs-score-block.sprite-panel-score-43 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -643px -484px;
+}
+
+.cqs-score-block.sprite-panel-score-44 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -643px -641px;
+}
+
+.cqs-score-block.sprite-panel-score-45 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -643px -799px;
+}
+
+.cqs-score-block.sprite-panel-score-46 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -643px -955px;
+}
+
+.cqs-score-block.sprite-panel-score-47 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -643px -1112px;
+}
+
+.cqs-score-block.sprite-panel-score-48 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -643px -1269px;
+}
+
+.cqs-score-block.sprite-panel-score-49 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -643px -1427px;
+}
+
+.cqs-score-block.sprite-panel-score-50 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -800px -15px;
+}
+
+.cqs-score-block.sprite-panel-score-51 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -800px -170px;
+}
+
+.cqs-score-block.sprite-panel-score-52 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -800px -327px;
+}
+
+.cqs-score-block.sprite-panel-score-53 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -800px -484px;
+}
+
+.cqs-score-block.sprite-panel-score-54 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -800px -641px;
+}
+
+.cqs-score-block.sprite-panel-score-55 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -800px -799px;
+}
+
+.cqs-score-block.sprite-panel-score-56 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -800px -955px;
+}
+
+.cqs-score-block.sprite-panel-score-57 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -800px -1112px;
+}
+
+.cqs-score-block.sprite-panel-score-58 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -800px -1269px;
+}
+
+.cqs-score-block.sprite-panel-score-59 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -800px -1427px;
+}
+
+.cqs-score-block.sprite-panel-score-60 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -957px -15px;
+}
+
+.cqs-score-block.sprite-panel-score-61 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -957px -170px;
+}
+
+.cqs-score-block.sprite-panel-score-62 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -957px -327px;
+}
+
+.cqs-score-block.sprite-panel-score-63 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -957px -484px;
+}
+
+.cqs-score-block.sprite-panel-score-64 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -957px -641px;
+}
+
+.cqs-score-block.sprite-panel-score-65 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -957px -799px;
+}
+
+.cqs-score-block.sprite-panel-score-66 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -957px -955px;
+}
+
+.cqs-score-block.sprite-panel-score-67 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -957px -1112px;
+}
+
+.cqs-score-block.sprite-panel-score-68 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -957px -1269px;
+}
+
+.cqs-score-block.sprite-panel-score-69 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -957px -1427px;
+}
+
+.cqs-score-block.sprite-panel-score-70 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -1114px -15px;
+}
+
+.cqs-score-block.sprite-panel-score-71 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -1114px -170px;
+}
+
+.cqs-score-block.sprite-panel-score-72 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -1114px -327px;
+}
+
+.cqs-score-block.sprite-panel-score-73 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -1114px -484px;
+}
+
+.cqs-score-block.sprite-panel-score-74 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -1114px -641px;
+}
+
+.cqs-score-block.sprite-panel-score-75 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -1114px -799px;
+}
+
+.cqs-score-block.sprite-panel-score-76 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -1114px -955px;
+}
+
+.cqs-score-block.sprite-panel-score-77 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -1114px -1112px;
+}
+
+.cqs-score-block.sprite-panel-score-78 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -1114px -1269px;
+}
+
+.cqs-score-block.sprite-panel-score-79 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -1114px -1427px;
+}
+
+.cqs-score-block.sprite-panel-score-80 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -1270px -15px;
+}
+
+.cqs-score-block.sprite-panel-score-81 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -1270px -170px;
+}
+
+.cqs-score-block.sprite-panel-score-82 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -1270px -327px;
+}
+
+.cqs-score-block.sprite-panel-score-83 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -1270px -484px;
+}
+
+.cqs-score-block.sprite-panel-score-84 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -1270px -641px;
+}
+
+.cqs-score-block.sprite-panel-score-85 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -1270px -799px;
+}
+
+.cqs-score-block.sprite-panel-score-86 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -1270px -955px;
+}
+
+.cqs-score-block.sprite-panel-score-87 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -1270px -1112px;
+}
+
+.cqs-score-block.sprite-panel-score-88 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -1270px -1269px;
+}
+
+.cqs-score-block.sprite-panel-score-89 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -1270px -1427px;
+}
+
+.cqs-score-block.sprite-panel-score-90 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -1428px -15px;
+}
+
+.cqs-score-block.sprite-panel-score-91 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -1428px -170px;
+}
+
+.cqs-score-block.sprite-panel-score-92 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -1428px -327px;
+}
+
+.cqs-score-block.sprite-panel-score-93 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -1428px -484px;
+}
+
+.cqs-score-block.sprite-panel-score-94 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -1428px -641px;
+}
+
+.cqs-score-block.sprite-panel-score-95 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -1428px -799px;
+}
+
+.cqs-score-block.sprite-panel-score-96 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -1428px -955px;
+}
+
+.cqs-score-block.sprite-panel-score-97 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -1428px -1112px;
+}
+
+.cqs-score-block.sprite-panel-score-98 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -1428px -1269px;
+}
+
+.cqs-score-block.sprite-panel-score-99 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -1428px -1427px;
+}
+
+.cqs-score-block.sprite-panel-score-100 {
+    background: url("../_images/sprite-panel-score.svg") no-repeat;
+    background-size: 177em;
+    background-position: -1585px -15px;
+}
+
+
+
+/* -------------------------------
+
+ SPRITES - CQS PHASE2
+
+---------------------------------- */
+
+
+
+
+/*--------  STICKERS SPRITE  --------*/
+
+.points-weight-container.double-points-kpi {
+    background: url(../_images/stickers.svg) no-repeat;
+    background-position: 0 0;
+    background-size: 8em;
+}
+
+.points-weight-container.half-points-kpi {
+    background: url("../_images/stickers.svg") no-repeat;
+    background-position: 0 -82px;
+    background-size: 8em;
+}
+
+
+
+
+/*-------------  THRESHOLDS SPRITE   ------------*/
+
+.thresholds-chart.points-0 {
+    background: url("../_images/thresholds.svg") no-repeat;
+    background-position: 0 -3056px;
+    background-size: 9em;
+}
+
+.thresholds-chart.inverted.points-0 {
+    background: url("../_images/thresholds-inverted.svg") no-repeat;
+    background-position: 0 -3055px;
+    background-size: 9em;
+}
+
+.thresholds-chart.points-1 {
+    background: url("../_images/thresholds.svg") no-repeat;
+    background-position: 0 -2750px;
+    background-size: 9em;
+}
+
+.thresholds-chart.inverted.points-1 {
+    background: url("../_images/thresholds-inverted.svg") no-repeat;
+    background-position: 0 -2749px;
+    background-size: 9em;
+}
+
+.thresholds-chart.points-2 {
+    background: url("../_images/thresholds.svg") no-repeat;
+    background-position: 0 -2444px;
+    background-size: 9em;
+}
+
+.thresholds-chart.inverted.points-2 {
+    background: url("../_images/thresholds-inverted.svg") no-repeat;
+    background-position: 0 -2444px;
+    background-size: 9em;
+}
+
+.thresholds-chart.points-3 {
+    background: url("../_images/thresholds.svg") no-repeat;
+    background-position: 0 -2139px;
+    background-size: 9em;
+}
+
+.thresholds-chart.inverted.points-3 {
+    background: url("../_images/thresholds-inverted.svg") no-repeat;
+    background-position: 0 -2138px;
+    background-size: 9em;
+}
+
+.thresholds-chart.points-4 {
+    background: url("../_images/thresholds.svg") no-repeat;
+    background-position: 0 -1833px;
+    background-size: 9em;
+}
+
+.thresholds-chart.inverted.points-4 {
+    background: url("../_images/thresholds-inverted.svg") no-repeat;
+    background-position: 0 -1832px;
+    background-size: 9em;
+}
+
+.thresholds-chart.points-5 {
+    background: url("../_images/thresholds.svg") no-repeat;
+    background-position: 0 -1527px;
+    background-size: 9em;
+}
+
+.thresholds-chart.inverted.points-5 {
+    background: url("../_images/thresholds-inverted.svg") no-repeat;
+    background-position: 0 -1526px;
+    background-size: 9em;
+}
+
+.thresholds-chart.points-6 {
+    background: url("../_images/thresholds.svg") no-repeat;
+    background-position: 0 -1221px;
+    background-size: 9em;
+}
+
+.thresholds-chart.inverted.points-6 {
+    background: url("../_images/thresholds-inverted.svg") no-repeat;
+    background-position: 0 -1220px;
+    background-size: 9em;
+}
+
+.thresholds-chart.points-7 {
+    background: url("../_images/thresholds.svg") no-repeat;
+    background-position: 0 -914px;
+    background-size: 9em;
+}
+
+.thresholds-chart.inverted.points-7 {
+    background: url("../_images/thresholds-inverted.svg") no-repeat;
+    background-position: 0 -913px;
+    background-size: 9em;
+}
+
+.thresholds-chart.points-8 {
+    background: url("../_images/thresholds.svg") no-repeat;
+    background-position: 0 -609px;
+    background-size: 9em;
+}
+
+.thresholds-chart.inverted.points-8 {
+    background: url("../_images/thresholds-inverted.svg") no-repeat;
+    background-position: 0 -608px;
+    background-size: 9em;
+}
+
+.thresholds-chart.points-9 {
+    background: url("../_images/thresholds.svg") no-repeat;
+    background-position: 0 -303px;
+    background-size: 9em;
+}
+
+.thresholds-chart.inverted.points-9 {
+    background: url("../_images/thresholds-inverted.svg") no-repeat;
+    background-position: 0 -302px;
+    background-size: 9em;
+}
+
+.thresholds-chart.points-10 {
+    background: url("../_images/thresholds.svg") no-repeat;
+    background-position: 0 3px;
+    background-size: 9em;
+}
+
+.thresholds-chart.inverted.points-10 {
+    background: url("../_images/thresholds-inverted.svg") no-repeat;
+    background-position: 0 4px;
+    background-size: 9em;
+}

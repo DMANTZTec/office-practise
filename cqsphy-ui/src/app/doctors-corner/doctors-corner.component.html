@@ -1,0 +1,20 @@
+<div class="framer">
+    <main class="main-content" id="CQS-physician-drcorner">
+        <div class="panel panel-container">
+            <div class="panel-body">
+                <p class="as-of-date">As of {{rptDt}}</p>
+                <div class="census-wrapper pull-right">
+                    <p class="type-display-data-4">{{entityCensus}}</p>
+                    <p class="type-label-L3">{{modality}} Patients</p>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <app-summary *ngIf="doctorsSummaryData" [trendData]='doctorsSummaryData' [update]="updateChildren"> </app-summary>
+                    </div>
+                </div>
+                <app-kpicategorydc></app-kpicategorydc>
+                <p class="footnote">Your CQS score is based on the total number of clinics you're associated with.</p>
+            </div>
+        </div>
+    </main>
+</div>

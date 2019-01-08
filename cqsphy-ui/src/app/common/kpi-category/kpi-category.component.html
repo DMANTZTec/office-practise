@@ -1,0 +1,103 @@
+
+
+<ng-container *ngIf = "kPIDetailsData">
+<ng-container *ngFor="let kPICategoryDataRecord of kPICategoryData">
+  <div class="row category-row">
+    <div class="col-xs-2 col-sm-1">
+      <i (click)="categoryClick(kPICategoryDataRecord, $event, this)" [attr.id]="'icon-collapse-'+kPICategoryDataRecord.metricCategoryOrder"
+        class="icon fa fa-plus-square fa-2x " type="button" data-toggle="collapse" [attr.data-target]="'#collapse-div-prototype-'+kPICategoryDataRecord.metricCategoryOrder"
+        title="Toggle"></i>
+    </div>
+    <!-- .col- -->
+
+    <div class="col-xs-10 col-sm-2">
+      <p class="type-display-H4">{{kPICategoryDataRecord.metricCategory}}</p>
+    </div>
+    <!-- .col- -->
+
+    <div class="col-xs-12 col-sm-6">
+      <!-- NESTED .row -->
+      <div class="row nested-row">
+        <div class="col-xs-1">
+          <div [attr.class]="'cqs-points-toggle-row sprite-toggle-row-points-'+kPICategoryDataRecord.uiPercentile">
+          </div>
+          <!-- .cqs-points-toggle-row -->
+        </div>
+        <!-- .col- -->
+        <div class="col-xs-11">
+          <p class="type-label-L2 data-color-6">{{kPICategoryDataRecord.description}}</p>
+        </div>
+        <!-- .col- -->
+      </div>
+      <!-- .row -->
+    </div>
+    <!-- .col- -->
+
+    <div class="col-xs-12 col-sm-3">
+      <div class="mini-indicator-wrapper pull-right">
+        <div class="mini-panel-indicator">
+          <div class="panel-heading panel-heading-module-red">
+          </div>
+          <!-- .panel-heading-module -->
+          <div class="panel-body">
+            <p class="type-label-L3 red">{{kPICategoryDataRecord.redCount}}</p>
+          </div>
+          <!-- .panel-body -->
+        </div>
+        <!-- .panel -->
+        <div class="mini-panel-indicator">
+          <div class="panel-heading panel-heading-module-yellow">
+          </div>
+          <!-- .panel-heading-module -->
+          <div class="panel-body">
+            <p class="type-label-L3 yellow">{{kPICategoryDataRecord.yellowCount}}</p>
+          </div>
+          <!-- .panel-body -->
+        </div>
+        <!-- .panel -->
+        <div class="mini-panel-indicator">
+          <div class="panel-heading panel-heading-module-green">
+          </div>
+          <!-- .panel-heading-module -->
+          <div class="panel-body">
+            <p class="type-label-L3 green">{{kPICategoryDataRecord.greenCount}}</p>
+          </div>
+          <!-- .panel-body -->
+        </div>
+        <!-- .panel -->
+      </div>
+    </div>
+    <!-- .col- -->
+  </div>
+  <!-- .row -->
+
+
+  <!------------- .collapse ------------>
+
+  <div class="row collapse" [attr.id]="'collapse-div-prototype-'+kPICategoryDataRecord.metricCategoryOrder">
+    <div class="col-xs-12">
+      <div class="well" >
+        <div class="row" *ngFor="let row of getCategoryRows(kPICategoryDataRecord.metricCategory)">
+
+          <div class="col-xs-12 col-sm-4" *ngFor="let kPIDetailsDataRecord of getCategoryKPIColumns(kPICategoryDataRecord.metricCategory, row)">
+            <div class="panel">
+              <app-kpi-tile [currentMonthRecord]='kPIDetailsDataRecord.metricRankResults' [trendData]='kPIDetailsDataRecord.metricKpiTrends'></app-kpi-tile>
+            </div>
+            <!-- .panel -->
+          </div>
+          <!-- .col- -->
+
+        </div>
+        <!-- .row -->
+      </div>
+      <!-- .well -->
+
+    </div>
+    <!-- .col- -->
+  </div>
+  <!-- .row collapse -->
+
+</ng-container>
+</ng-container>
+
+<div class="last-category-row-bottom-border"></div>
