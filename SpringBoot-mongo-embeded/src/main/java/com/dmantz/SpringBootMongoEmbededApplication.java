@@ -1,0 +1,14 @@
+package com.dmantz;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class SpringBootMongoEmbededApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(SpringBootMongoEmbededApplication.class, args);
+	}
+
+}
+
