@@ -1,0 +1,104 @@
+
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    </head>
+<body>
+    
+       
+        
+        <ul [ngClass]="['list-inline',' category-section']" display="none">
+                <li [ngClass]="['rings-section',' display-rings', 'dropdown']" (mouseover)="getRings()" (mouseout)="mouseout()">
+                    <a href="#" dropdown-toggle data-toggle="dropdown">rings<i class="fa fa-angle-down down-angle" aria-hidden="true"></i></a>
+                   <div [ngClass]="['rdata',' dropdown-menu', 'earringsid']" id="rings"> 
+                       <ul>
+                            <li [ngClass]="'ringsheadings'"  *ngFor="let item of RingsList|keyvalue">{{item.key}}</li>
+                            
+                        </ul>
+                        <ul [ngClass]="'ringsdata'"  [ngStyle]="{'padding-right':'80px'}" >
+                                <li [ngClass]="'listclass'" *ngFor="let bymetalandstones of RingsList.bymetalandstones">{{bymetalandstones}}</li>
+                        </ul>
+                        <ul [ngClass]="'ringsdata'">
+                                <li  [ngClass]="'listclass'" *ngFor="let bypricerange of RingsList.bypricerange"> {{bypricerange}}</li>
+                            </ul>
+                            <ul [ngClass]="'ringsdata'">
+                                    <li   [ngClass]="'listclass'"  *ngFor="let popularring of RingsList.popularringstypes">
+                                            {{popularring}}</li> 
+                                
+                            </ul>
+                      </div>  
+                </li>
+
+                <!--displaying list of EarRings json data-->
+
+                <li class="rings-section display-rings dropdown" (mouseover)="getEarRings()" (mouseout)="setMouseOut()">
+                        <a href="#" dropdown-toggle data-toggle="dropdown">Earrings
+                            <i class="fa fa-angle-down down-angle" aria-hidden="true"></i>
+                        </a>
+                        <div [attr.id]="'earrings'"  [ngClass]="['earringsid','dropdown-menu']">
+                            <ul>
+                                <li [ngClass]="'ringsheadings'"*ngFor="let item of EarRingsList|keyvalue">{{item.key}}</li>
+                            </ul>
+                            <ul [ngClass]="'ringsdata'" [ngStyle]="{'padding-right':'80px'}">
+                                <li  [ngClass]="'listclass'" *ngFor="let bymetalandstones of EarRingsList.bymetalandstones">{{bymetalandstones}}</li>
+                            </ul>
+                            <ul [ngClass]="'ringsdata'">
+                                <li [ngClass]="'listclass'" *ngFor="let  bypricerange of EarRingsList.bypricerange">{{bypricerange}}</li>
+                            </ul>
+
+                            <ul [ngClass]="'ringsdata'">
+                                <li  [ngClass]="'listclass'" *ngFor="let popularearringstypes of EarRingsList.popularearringstypes ">{{popularearringstypes}}</li>
+
+                            </ul>
+
+                        </div>
+                        
+                            
+                          
+
+                </li>    
+
+               <!--displaying  new arravials data-->
+               <!--
+
+                <li class="rings-section  dropdown" (mouseover)="getNewArrivals()" (mouseout)="setMouseOut2()">
+                    <a href="#" dropdown-toggle data-toggle="dropdown">New Arrivals
+                        <i class="fa fa-angle-down down-angle" aria-hidden="true"></i></a>
+                        <div  id="newarrivals" [ngClass]="'dropdown-menu'">
+                            <ul>
+                                <li [ngClass]="'ringsheadings'" *ngFor="let item of NewArrivalsList|keyvalue">{{item.key}}</li>
+                            </ul>
+
+                            <ul [ngClass]="'ringsdata'" [ngStyle]="{'padding-right':'80px'}">  
+                                <li   [ngClass]="'listclass'" *ngFor="let bymetalandstones of NewArrivalsList.bymetalandstones">{{bymetalandstones}}</li>
+                            </ul>
+                            <ul [ngClass]="'ringsdata'">
+                                    <li  [ngClass]="'listclass'" *ngFor="let bypricerange of NewArrivalsList.bypricerange">{{bypricerange}}</li>
+                                </ul>
+
+                                <ul [ngClass]="'ringsdata'">
+                                    <li  [ngClass]="'listclass'"  *ngFor="let popularpendenttypes of NewArrivalsList.popularpendentstypes">{{ popularpendenttypes}}</li>
+                                </ul>
+                          
+                        </div>
+                
+                </li>
+            -->
+                 <!--displays goldcoins data -->
+
+                <li class="rings-section" (mouseover)="getGoldCoins()">
+                    <a href="#">Gold coins
+                        <i class="fa fa-angle-down down-angle" aria-hidden="true"></i>
+                    </a>
+                    
+
+                    
+                </li>
+        </ul>
+       
+       
+    
+                        
+                            
+  </body>
+  </html>

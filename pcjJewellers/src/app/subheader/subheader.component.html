@@ -1,0 +1,37 @@
+
+<div class="header-bottom">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="logo pull-left">
+          <a href="index.html" target="_self" title="PcJeweller"> <img src="assets/images/PCJ-Logo.png" alt="PCJeweller">
+            </a>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <app-search></app-search>
+      </div>
+      <div class="col-md-3 loginpad">
+        <ul class="list-inline">
+          <li *ngFor="let loginLink of loginLinks"><a [routerLink]="loginLink.link">{{loginLink.label}}</a></li>
+        </ul>
+        <!--<ul class="list-inline">
+          <li><a routerLink="/login" target="_self" title="Login">
+              Login </a></li>
+          <li><a routerLink="/register" target="_self" title="Register">
+              Register </a></li>
+          <li><a routerLink="/favorites" target="_self" title="Like"> <i class="fa fa-heart-o" aria-hidden="true"></i>
+          </a></li>
+          <li><a routerLink="/cart" target="_self" title="Shoping-kart">
+              <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+          </a></li>
+        </ul>-->
+
+      </div>
+    </div>
+    <div>
+      <app-dropdowns></app-dropdowns>
+    </div>
+    
+  </div>
+</div>

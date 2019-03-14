@@ -1,0 +1,94 @@
+.category-section {
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+.category-section > li {
+    padding-right: 17px;
+    padding-left: 17px;
+}
+category-section .rings-section .rings-detail {
+    display: none;
+    background: #fff;
+    position: absolute;
+    /* top: 37%; */
+    width: 100%;
+    padding: 15px 35px 35px 20px;
+    border: 1px solid #dfdfdf;
+    margin-top: -1px;
+    z-index: 999;
+    left: 0px;
+    list-style-type: none;
+}
+.category-section .rings-section .rings-detail > li {
+    width: 33%;
+    float: left;
+    text-align: left;
+}
+span {
+    font-weight: 600;
+    border-bottom: 1px solid #dfdfdf;
+    padding-bottom: 3px;
+}
+li.rings-types {
+    float: left;
+}
+.category-section .rings-section .rings-detail > li> ul {
+    padding: 0px;
+    text-align: left;
+    list-style-type: none;
+    padding-top: 8px;
+}
+category-section .down-angle {
+    font-size: 15px;
+    font-weight: 600;
+    color: #AEAEAE;
+    padding-left: 8px;
+}
+.category-section li a{
+    color:#272727;
+}
+.ringsul >li{
+    display: inline-block;
+    padding-left: 29px;
+}
+/*.open>.dropdown-menu {
+    display: block;
+    width: 600px;
+}*/
+.ringsheading{
+    padding-right: 48px;
+}
+.rings-detail>ul{
+    display: inline;
+}
+.ringsheadings{
+    display: inline-block;
+    list-style: none;
+    padding-right: 30px;
+    font-weight: 600;
+    border-bottom: 1px solid #dfdfdf;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    padding-bottom: 5px;
+}
+.ringsdata{
+    display: inline-block;
+    list-style: none;
+    padding-right: 30px;
+    text-transform: uppercase;
+}
+.ringslink{
+    margin-top: 20px;
+}
+.dropdown-menu{
+    width: 700px;
+}
+.earringsid{
+    padding: 35px;
+}
+.listclass{
+    padding-bottom: 10px;
+}

@@ -1,0 +1,15 @@
+.logo img{
+    width: 195px;
+}
+.loginpad{
+    padding-top: 30px;
+    padding-right: 0px;
+    padding-left: 25px;
+}
+.list-inline{
+    padding-left: 20px;
+}
+.list-inline>li{
+    padding-left: 15px;
+    padding-right: 9px;
+}
