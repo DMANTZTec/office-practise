@@ -1,5 +1,7 @@
 import { Component,OnInit } from '@angular/core';
 import { GetnameService } from './getname.service';
+import { Employee } from './Employee';
+
 
 @Component({
   selector: 'app-root',
@@ -9,16 +11,18 @@ import { GetnameService } from './getname.service';
 
 export class AppComponent implements OnInit{
   title = 'SampleService';
-   datalist:any[]=[];
+  record:Employee[];
   constructor(private getnameService:GetnameService){}
-record={};
   ngOnInit(){
-      this.record=this.getnameService.getName();
-      this.getNames();
+      //this.getnameService.getName().subscribe(
+      //  data=>{
+      //    this.record=data;
+        //  console.log(this.record);
+     // }
+     // );
+      //this.getNames();
     }
-    getNames(){
-     this.record= this.getnameService.getName().subscribe( function(data){console.log(data)})
-    }
+  
   
   
 }

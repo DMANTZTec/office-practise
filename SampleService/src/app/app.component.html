@@ -1,4 +1,7 @@
-hello
+AppComponent
 <ul>
-  <li *ngFor="let name of names">{{name.name}}</li>
+  <li *ngFor="let record of record">{{record.name}}{{record.mobileNo}}</li>
 </ul>
+<a  routerLinkActive="active" routerLink="getEmployees">getEmployees</a>
+
+<router-outlet></router-outlet>
