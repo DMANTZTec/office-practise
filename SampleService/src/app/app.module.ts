@@ -17,6 +17,12 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { EmployeedetailsService } from './employee/employeedetails.service';
 import { EmployeeDetailComponent } from './employee/employee-detail/employee-detail.component';
 import { EmployeeListResolverService } from './employee/employee-list-resolver.service';
+import { CreateEmployeeComponent } from './create-employee/create-employee.component';
+import { CreateEmployeeDeacivateService } from './create-employee/create-employee-deacivate.service';
+import { LoginComponent } from './login/login.component';
+import { LoginService } from './login/login.service';
+import { UpdateEmployeeComponent } from './employee/update-employee/update-employee.component';
+import { DeleteEmployeeComponent } from './employee/delete-employee/delete-employee.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +43,15 @@ import { EmployeeListResolverService } from './employee/employee-list-resolver.s
     
     PagenotfoundComponent,
     
-    EmployeeDetailComponent
+    EmployeeDetailComponent,
+    
+    CreateEmployeeComponent,
+    
+    LoginComponent,
+    
+    UpdateEmployeeComponent,
+    
+    DeleteEmployeeComponent
     
     
     
@@ -48,7 +62,7 @@ import { EmployeeListResolverService } from './employee/employee-list-resolver.s
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [EmployeeListResolverService,EmployeedetailsService],
+  providers: [EmployeeListResolverService,CreateEmployeeDeacivateService,EmployeedetailsService,LoginService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

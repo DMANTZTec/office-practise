@@ -21,8 +21,13 @@ export class AppComponent implements OnInit{
      // }
      // );
       //this.getNames();
+      //var emp=new Employee(3,"gsg","9694116");
+      // this.getnameService.saveEmployee(emp).subscribe(data=>{console.log(data)});
     }
   
   
+  
+
+
   
 }

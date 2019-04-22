@@ -13,6 +13,13 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { EmployeeDetailComponent } from './employee/employee-detail/employee-detail.component';
 import { EmployeedetailsService } from './employee/employeedetails.service';
 import { EmployeeListResolverService } from './employee/employee-list-resolver.service';
+import { CreateEmployeeComponent } from './create-employee/create-employee.component';
+import { CreateEmployeeDeacivateService } from './create-employee/create-employee-deacivate.service';
+import { LoginComponent } from './login/login.component';
+import { LoginService } from './login/login.service';
+import { AuthService } from './login/auth.service';
+import { UpdateEmployeeComponent } from './employee/update-employee/update-employee.component';
+import { DeleteEmployeeComponent } from './employee/delete-employee/delete-employee.component';
 
 const routes: Routes = [
   {
@@ -22,22 +29,48 @@ const routes: Routes = [
 
   },
   {
+    path:'save',
+    component:EmployeeComponent
+  },
+  {
+    path:'updateEmployee',
+    component:UpdateEmployeeComponent
+  },
+  {
+    path:'deleteEmployee',
+    component:DeleteEmployeeComponent
+
+  },
+  {
     path:'employees/:id',
     component:EmployeeDetailComponent,
     canActivate:[EmployeedetailsService]
 
   },
   {
+    path:'createEmployee',
+    component:CreateEmployeeComponent,
+    canDeactivate:[CreateEmployeeDeacivateService]
+  },
+  {
     path:'notFound',
     component:PagenotfoundComponent
   },
   {
+    path:'login',
+    component:LoginComponent,
+    canActivate:[AuthService]
+
+  },
+  {
     path:'settings',
     component:SettingComponentComponent,
+    canActivateChild:[EmployeedetailsService],
     children:[
       {
         path:'profile',
         component: SettingsProfileComponent,
+        
         children:[
           {
           path:'about',

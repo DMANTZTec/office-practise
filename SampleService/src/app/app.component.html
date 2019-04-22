@@ -2,6 +2,11 @@ AppComponent
 <ul>
   <li *ngFor="let record of record">{{record.name}}{{record.mobileNo}}</li>
 </ul>
-<a  routerLinkActive="active" routerLink="getEmployees">getEmployees</a>
-
+<a  routerLinkActive="active" routerLink="getEmployees" >getEmployees</a>&nbsp;&nbsp;
+<a routerLinkActive="active" routerLink="createEmployee">createEmployee</a>&nbsp;&nbsp;
+<a routerLinkActive="active" routerLink="save" (click)='saveEmployee()'>saveEmployee</a>&nbsp;&nbsp;
+<a routerLinkActive="active" routerLink="updateEmployee" (click)='updateEmployee()'>updateEmployee</a>&nbsp;&nbsp;
+<a routerLinkActive="active" routerLink="deleteEmployee" (click)='deleteEmployee()'>DeleteEmployee</a>&nbsp;&nbsp;
+<a routerLinkActive="active" routerLink="login">login</a>&nbsp;&nbsp;
+<a routerLinkActive="active" routerLink="settings">settings</a>
 <router-outlet></router-outlet>
