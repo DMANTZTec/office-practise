@@ -1,0 +1,63 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<form [formGroup]="survey" novalidate (ngSubmit)="onSubmit(survey)">
+  <!---Survey Section -->
+  <div class="form-group">
+    <label>Product Name</label>
+    <input type="text" formControlName="productName">
+    <!--display error message if name is not valid-->
+
+    <label>Product Desc</label>
+    <input type="text" formControlName="productDesc">
+    <label>Search Tag</label>
+    <input type="text" formControlName="searchTag">
+  </div>
+  <div formArrayName="productCatalogDir">
+   
+    <div class="pcd-container" *ngFor="let productCatalogDir of getproductCatalogDirs(survey); let k = index"> 
+        <!-- <div class="pcd-container" *ngFor="let productCatalogDir of survey.controls.productCatalogDir.controls; let k = index"> -->
+      <div [formGroupName]="k">
+        <!--street-->
+        <div>
+          <label>Catalog Id</label>
+          <input type="text" formControlName="catalogId">
+          <!--display error message if street is not valid-->
+          <!-- <small [hidden]="myForm.controls.pcds.controls[k].controls.catalogId.valid">
+                   </small> -->
+        </div>
+        <!--postcode-->
+        <div>
+          <label>Primary Flag</label>
+          <input type="text" formControlName="primaryFlg">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div formArrayName="sku">
+    <div class="sku-container" *ngFor="let sku of getSkus(survey); let i = index"> 
+        <!-- <div class="sku-container" *ngFor="let sku of survey.controls.sku.controls; let i = index"> -->
+      <div class="ui raised segments" [formGroupName]="i">
+        <h4 class="ui header">Sku Details</h4>
+        <input type="text" placeholder="Image Url" formControlName="imageUrl">
+        <input type="text" placeholder="Price" formControlName="price">
+        <input type="text" placeholder="Product SkuCd" formControlName="productSkuCd">
+        
+        <hr>
+        <div class="option-container" formArrayName="options">
+           <div [formGroupName]="j" *ngFor="let option of getOptions(sku); let j = index"> 
+              
+            <input type="text" placeholder="Option Name" formControlName="optionName">
+            <input type="text" placeholder="Option Value" formControlName="optionValue">
+
+          </div><br>
+        </div>
+      </div>
+    </div><br>
+    <button (click)="addProduct()" class="point">Add Product </button>
+
+  </div>
+
+
+</form>
+
+<pre> {{survey.value | json}} </pre>
+<router-outlet></router-outlet>
