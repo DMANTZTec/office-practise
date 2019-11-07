@@ -1,0 +1,11 @@
+<!--The content below is only a placeholder and can be replaced.-->
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+<form [formGroup]="employee">
+  ID:<input formControlName="id" name="id" id="id"><br>
+  NAME:<input formControlName="name" name="name" id="name"><br>
+  DEPT:<input formControlName="dept" name="dept" id="dept"><br>
+</form> 
+<button (click)="post()">INSERT</button> 
+<router-outlet></router-outlet>
