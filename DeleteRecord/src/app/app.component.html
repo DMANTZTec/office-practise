@@ -1,0 +1,11 @@
+<div>
+  <form [formGroup]="formdata" (ngSubmit)= "onDelete(formdata.value)">
+    <input type="text" class="fortextbox" name="empID" placeholder="empID" formControlName="empID">
+    <br/>
+    <input type="submit" class="forsubmit" value="Delete">
+    <br/> 
+  </form> 
+  </div>
+<p>
+   record id={{empID}} is deleted.
+</p>
