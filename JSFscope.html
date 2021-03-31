@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<htmml>
+<body>
+<h2>Function Scope</h2>
+<p>outside myFunction() CarName is undefined</p>
+
+<p id="sample1"></p>
+<p id="sample"></p>
+
+<script>
+myFunction();
+
+function myFunction() {
+  var carName = "Volvo";
+  document.getElementById("sample1").innerHTML = typeof carName + " " + carName;
+}
+document.getElementById("sample2").innerHTML = typeof carName;
+</script>
+
+</body>
+</html>
+	 
