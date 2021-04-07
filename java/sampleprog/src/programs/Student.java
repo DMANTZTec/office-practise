@@ -1,18 +1,28 @@
 package programs;
 
 public class Student {
-		 public static void main(String args[]) {
-		 	StudentArr[] arr;
-		 	arr=new StudentArr[5];
-		 	arr[0]=new StudentArr(1,"aman");
-		 	arr[1]=new StudentArr(2,"vaibhav");
-		 	arr[2]=new StudentArr(1,"shikar");
-		 	arr[3]=new StudentArr(1,"dharmesh");
-		 	arr[4]=new StudentArr(1,"mohit");
-		 	 for (int i = 0; i < arr.length; i++) 
-		          System.out.println("Element at " + i + " : " + 
-		                      arr[i].roll_no +" "+ arr[i].name);
-		 	
-		 }
-		 }
+	int rollno;
+	String name;
+	String city;
+	
+	Student(int rollno, String name,String city){
+		this.rollno=rollno;
+		this.name=name;
+		this.city=city;
+		
+	}
+	
+	public String toString() {
+		return rollno + " " +name+ " " +city;
+	}
+	
+	public static void main(String[] args) {
+		Student s1 = new Student(559,"John","Lucknow");
+		Student s2 = new Student(560,"Tom","Hyd");
+		
+		System.out.println(s1);
+		System.out.println(s2);
+		
+	}
 
+}
