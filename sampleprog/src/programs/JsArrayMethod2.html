@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+
+<h2>JavaScript Array Methods</h2> 
+<h2>shift()</h2>
+<h2>unshift()</h2>
+
+</head>
+<body>
+
+<p id = "sample1"></p>
+<p id = "sample2"></p>
+<p id = "sample3"></p>
+<p id = "sample4"></p>
+
+<script>
+
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+document.getElementById("sample1").innerHTML = fruits;
+
+document.getElementById("sample2").innerHTML = fruits.shift();
+
+fruits.unshift("Lemon");
+
+document.getElementById("sample3").innerHTML = fruits;
+
+delete fruits[1];//Orange
+
+document.getElementById("sample4").innerHTML = fruits;
+
+</script>
+
+</body>
+</html>
