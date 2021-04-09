@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+
+</head>
+<body>
+
+<h2>JavaScript Array.filter()</h2>
+
+<p id="sample"></p>
+
+<script>
+var numbers = [45, 4, 9, 16, 25];
+var over = numbers.filter(myFunction);
+
+document.getElementById("sample").innerHTML = over;
+
+function myFunction(value) {
+  return value > 18;
+}
+
+</script>
+
+</body>
+</html>
